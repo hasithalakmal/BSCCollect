@@ -1,0 +1,58 @@
+<?xml version="1.0"?><svg width="1200" height="840" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>honeybee</title>
+ <defs>
+  <linearGradient id="linearGradient6424">
+   <stop stop-color="#000000" id="stop6426" offset="0"/>
+   <stop stop-color="#000000" stop-opacity="0" id="stop6428" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient6414">
+   <stop stop-color="#000000" id="stop6416" offset="0"/>
+   <stop stop-color="#000000" stop-opacity="0" id="stop6418" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient6404">
+   <stop stop-color="#000000" id="stop6406" offset="0"/>
+   <stop stop-color="#000000" stop-opacity="0" id="stop6408" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient6392">
+   <stop stop-color="#000000" id="stop6394" offset="0"/>
+   <stop stop-color="#000000" stop-opacity="0" id="stop6396" offset="1"/>
+  </linearGradient>
+  <pattern patternTransform="translate(143.77256,242.21983)" id="pattern6326" xlink:href="#pattern6314"/>
+  <pattern id="pattern6314" patternTransform="translate(187.88837,236.15892)" height="200.01021" width="472.7514" patternUnits="userSpaceOnUse">
+   <rect fill="#ffe800" id="rect6310" width="472.7514" height="200.01021" x="0" y="0"/>
+   <rect fill="#000000" y="0" x="0" height="93.944191" width="472.7514" id="rect6312"/>
+  </pattern>
+  <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.99999038,0.00210276,-0.02275746,2.4866478,10.007213,-652.30554)" r="183.34268" fy="439.54642" fx="441.94275" cy="439.54642" cx="441.94275" id="radialGradient6398" xlink:href="#linearGradient6392"/>
+  <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,3.0535397,0,-949.06217)" r="183.34268" fy="463.58862" fx="441.94275" cy="463.58862" cx="441.94275" id="radialGradient6410" xlink:href="#linearGradient6404"/>
+  <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,1.0349331,0,-13.331195)" r="187.95918" fy="432.61157" fx="424.93036" cy="432.61157" cx="424.93036" id="radialGradient6420" xlink:href="#linearGradient6414"/>
+  <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,1.0349331,0,-13.331195)" r="187.95918" fy="435.61102" fx="435.22858" cy="435.61102" cx="435.22858" id="radialGradient6430" xlink:href="#linearGradient6424"/>
+  <filter id="filter6438">
+   <feGaussianBlur id="feGaussianBlur6440" stdDeviation="4.562059"/>
+  </filter>
+ </defs>
+ <metadata id="metadata4236">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <path fill="#000000" id="path6346" d="m558.213745,708.5849c38.561707,37.093628 42.545349,70.070862 47.110413,111.283081c2.962036,-40.953491 8.207397,-73.535706 47.110657,-111.283081l-94.221069,0z"/>
+   <g id="g6446">
+    <path fill="none" stroke="#000000" stroke-width="20.103987" stroke-linecap="round" stroke-miterlimit="4" filter="url(#filter6438)" id="path6442" d="m628.425171,642.967346c33.350769,62.868958 150.792175,41.349854 262.312378,-48.064453c111.520264,-89.414368 174.889038,-212.864471 141.53833,-275.73349c-33.351196,-62.869141 -150.792297,-41.349915 -262.3125,48.064362c-111.520264,89.414368 -174.889099,212.864502 -141.538208,275.733582z"/>
+    <path fill="#000000" fill-opacity="0.105263" stroke="#fbff00" stroke-width="20.103987" stroke-linecap="round" stroke-miterlimit="4" d="m628.425171,628.625671c33.350769,62.869141 150.792175,41.349915 262.312378,-48.064392c111.520264,-89.414337 174.889038,-212.864471 141.53833,-275.733521c-33.351196,-62.869095 -150.792297,-41.349884 -262.3125,48.064423c-111.520264,89.414307 -174.889099,212.864471 -141.538208,275.73349z" id="path6444"/>
+   </g>
+   <g id="g6450">
+    <path fill="none" stroke="#000000" stroke-width="20.103987" stroke-linecap="round" stroke-miterlimit="4" filter="url(#filter6438)" d="m587.057861,642.967346c-33.350952,62.868958 -150.792206,41.349854 -262.312347,-48.064453c-111.520279,-89.414368 -174.88913,-212.864471 -141.538223,-275.73349c33.350845,-62.869141 150.792191,-41.349915 262.312393,48.064362c111.520294,89.414368 174.889069,212.864502 141.538177,275.733582z" id="path6432"/>
+    <path fill="#000000" fill-opacity="0.105263" stroke="#fbff00" stroke-width="20.103987" stroke-linecap="round" stroke-miterlimit="4" id="path6366" d="m587.057861,628.625671c-33.350952,62.869141 -150.792206,41.349915 -262.312347,-48.064392c-111.520279,-89.414337 -174.88913,-212.864471 -141.538223,-275.733521c33.350845,-62.869095 150.792191,-41.349884 262.312393,48.064423c111.520294,89.414307 174.889069,212.864471 141.538177,275.73349z"/>
+   </g>
+   <path fill="url(#pattern6326)" d="m727.307373,508.817871a121.983215,231.685211 0 1 1-0.159912,-11.862671" id="path6320"/>
+   <path fill="none" stroke="#000000" stroke-width="13" stroke-linecap="round" stroke-miterlimit="4" id="path6348" d="m560.907837,236.099472c-80.084473,-331.292496 -213.262207,-172.228577 -252.618622,-70.758987"/>
+   <path fill="none" stroke="#000000" stroke-width="13" stroke-linecap="round" stroke-miterlimit="4" d="m649.740723,236.099472c80.084412,-331.292496 213.262207,-172.228577 252.61853,-70.758987" id="path6350"/>
+   <path fill="url(#radialGradient6398)" opacity="0.8125" id="path6390" d="m727.307373,508.817871a121.983215,231.685211 0 1 1-0.159912,-11.862671"/>
+   <path fill="url(#pattern6314)" d="m727.307373,286.252167a121.983215,76.406822 0 1 1-0.159912,-3.91214" id="path6400"/>
+   <path fill="url(#pattern6326)" stroke="#000000" stroke-width="9.233" stroke-miterlimit="4" d="m333.111481,175.233841a26.210241,26.38755 0 1 1-0.034393,-1.35112" id="path6360"/>
+   <path fill="url(#pattern6326)" stroke="#000000" stroke-width="9.233" stroke-miterlimit="4" id="path6362" d="m932.733459,182.553741a26.210241,26.38755 0 1 1-0.034302,-1.351105"/>
+   <path fill="url(#radialGradient6410)" opacity="0.692308" id="path6402" d="m727.307373,286.252167a121.983215,76.406822 0 1 1-0.159912,-3.91214"/>
+   <path fill="url(#radialGradient6420)" stroke="#000000" stroke-width="9.233" stroke-miterlimit="4" d="m932.733459,182.553741a26.210241,26.38755 0 1 1-52.420471,0a26.210241,26.38755 0 1 152.420471,0z" id="path6412"/>
+   <path fill="url(#radialGradient6430)" stroke="#000000" stroke-width="9.233" stroke-miterlimit="4" id="path6422" d="m333.111481,175.233841a26.210241,26.38755 0 1 1-52.420471,0a26.210241,26.38755 0 1 152.420471,0z"/>
+  </g>
+ </g>
+</svg>
