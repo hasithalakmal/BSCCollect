@@ -41,17 +41,16 @@ public class DataRestController {
 
     @RequestMapping(value = "/metricdata/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     @ResponseBody
-    public List<String> createData(@RequestBody InsertedMetricDataWrapper insertedMetricDataWrapper) {
+    public String createData(@RequestBody InsertedMetricDataWrapper insertedMetricDataWrapper) {
 
-        System.out.println("Massooo Insersion is working....");
-
-        List<String> response = new ArrayList<String>();
-        for (InsertedMetricData insertedMetricData : insertedMetricDataWrapper.getInsertedMetricDatas()) {
+        String x ="{\"response\" :[";
+        for (InsertedMetricData insertedMetricData : insertedMetricDataWrapper.getInsertedMetricDatas()) { 
             insertedMetricDataService.saveinsertedMetricData(insertedMetricData);
-            response.add( insertedMetricData.toString());
+            x = x +insertedMetricData.toJason()+" , ";    
         }
-
-        return response;
+        x=x+"{}]}";
+        
+        return x;
     }
 
 

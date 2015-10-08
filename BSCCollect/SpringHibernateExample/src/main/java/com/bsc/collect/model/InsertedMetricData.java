@@ -5,12 +5,18 @@
  */
 package com.bsc.collect.model;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Hasitha
  */
 public class InsertedMetricData {
-    String kpiName,metricName,date,value,reason;
+
+    String kpiName, metricName, date, value, reason;
 
     public String getKpiName() {
         return kpiName;
@@ -92,9 +98,21 @@ public class InsertedMetricData {
 
     @Override
     public String toString() {
-        return "InsertedMetricData{" + "kpiName=" + kpiName + ", metricName=" + metricName + ", date=" + date + ", value=" + value + ", reason=" + reason + '}';
+        return "{" + "kpiName : " + kpiName + ", metricName :" + metricName + ", date : " + date + ", value : " + value + ", reason : " + reason + '}';
     }
 
-    
-    
+    public String toJason() {
+         String j = "";
+        try {
+           
+            ObjectMapper ow = new ObjectMapper();
+            String json = ow.writeValueAsString(this);
+            j=json;
+            System.out.println(">>>>>>>>>>>>>>>>>>>>>>"+json);
+        } catch (JsonProcessingException ex) {
+            Logger.getLogger(InsertedMetricData.class.getName()).log(Level.SEVERE, null, ex);
+        }
+         return j;
+    }
+
 }

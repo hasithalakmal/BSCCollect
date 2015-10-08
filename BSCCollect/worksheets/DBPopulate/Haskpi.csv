@@ -1,0 +1,1142 @@
+kpi_id,metric_id,metric_name
+1,1,Total Energy Delivered to Colombo City Via GSS during the six months.
+1,2,Total of the Boundary Meter Readings of Colombo City during the six months.
+1,3,Total Embedded Generation in Colombo City during the six months.
+1,4,Billing ? Retail Sales of Colombo City during the six months.
+1,5,Billing ? Bulk Sales of Colombo City during the six months.
+1,6,Total Street Lighting energy in Colombo City during the six months.
+1,7,Total energy of Temporary Connections in Colombo City during the six months.
+1,8,Net Metering Generation in Colombo City during the six months.
+1,9,"
+Total Energy Delivered to Central Province Via GSS during the six months. 
+"
+1,10,"
+Total of the Boundary Meter Readings of Central Province during the six months. "
+1,11,"
+Total Embedded Generation in Central Province during the six months. 
+"
+1,12,"
+Billing ? Retail Sales of Central Province during the six months. 
+"
+1,13,"
+Billing ? Bulk Sales of Central Province during the six months. 
+"
+1,14,"
+Total Street Lighting energy in Central Province during the six months. 
+"
+1,15,"
+Total energy of Temporary Connections in Central Province during the six months. 
+"
+1,16,Net Metering Generation in Central Province during the six months. 
+1,17,Total Energy Delivered to Eastern Province Via GSS during the six months. 
+1,18,"Total of the Boundary Meter Readings of Eastern Province during the six months. 
+"
+1,19,"
+Total Embedded Generation in Eastern Province during the six months. "
+1,20,"
+Billing ? Retail Sales of Eastern Province during the six months."
+1,21,Billing ? Bulk Sales of Eastern Province during the six months. 
+1,22,Total Street Lighting energy in Eastern Province during the six months. 
+1,23,Total energy of Temporary Connections in Eastern Province during the six months. 
+1,24,Net Metering Generation in Eastern Province during the six months. 
+1,25,Total Energy Delivered to NCP Via GSS during the six months.
+1,26,Total of the Boundary Meter Readings of NCP during the six months.
+1,27,Total Embedded Generation in NCP during the six months.
+1,28,Billing ? Retail Sales of NCP during the six months.
+1,29,Billing ? Bulk Sales of NCP during the six months.
+1,30,Total Street Lighting energy in NCP during the six months.
+1,31,Total energy of Temporary Connections in NCP during the six months.
+1,32,Net Metering Generation in NCP during the six months.
+1,33,"
+Total Energy Delivered to Northern Province Via GSS during the six months. 
+"
+1,34,"
+Total of the Boundary Meter Readings of Northern Province during the six months. 
+"
+1,35,"
+Total Embedded Generation in Northern Province during the six months. 
+"
+1,36,"
+Billing ? Retail Sales of Northern Province during the six months. 
+."
+1,37,"
+Billing ? Bulk Sales of Northern Province during the six months. 
+"
+1,38,"
+Total Street Lighting energy in Northern Province during the six months. 
+"
+1,39,"
+Total energy of Temporary Connections in Northern Province during the six months. 
+"
+1,40,"
+Net Metering Generation in Northern Province during the six months. 
+"
+1,41,Total Energy Delivered to NWP Via GSS during the six months.
+1,42,Total of the Boundary Meter Readings of NWP during the six months.
+1,43,Total Embedded Generation in NWP during the six months.
+1,44,Billing ? Retail Sales of NWP during the six months.
+1,45,Billing ? Bulk Sales of NWP during the six months.
+1,46,Total Street Lighting energy in NWP during the six months.
+1,47,Total energy of Temporary Connections in NWP during the six months.
+1,48,Net Metering Generation in NWP during the six months.
+1,49,"
+Total Energy Delivered to Sabaragamuwa Province Via GSS during the six months. 
+"
+1,50,"
+Total of the Boundary Meter Readings of Sabaragamuwa Province during the six months. 
+"
+1,51,"
+Total Embedded Generation in Sabaragamuwa Province during the six months. 
+"
+1,52,"
+Billing ? Retail Sales of Sabaragamuwa Province during the six months. 
+"
+1,53,"
+Billing ? Bulk Sales of Sabaragamuwa Province during the six months. 
+"
+1,54,"
+Total Street Lighting energy in Sabaragamuwa Province during the six months. 
+"
+1,55,"
+Total energy of Temporary Connections in Sabaragamuwa Province during the six months. 
+"
+1,56,"
+Net Metering Generation in Sabaragamuwa Province during the six months. 
+"
+1,57,"
+Total Energy Delivered to Southern Province Via GSS during the six months. 
+"
+1,58,"
+Total of the Boundary Meter Readings of Southern Province during the six months. 
+"
+1,59,"
+Total Embedded Generation in Southern Province during the six months. 
+s."
+1,60,"
+Billing ? Retail Sales of Southern Province during the six months. 
+"
+1,61,"
+Billing ? Bulk Sales of Southern Province during the six months. 
+"
+1,62,"
+Total Street Lighting energy in Southern Province during the six months. 
+"
+1,63,"
+Total energy of Temporary Connections in Southern Province during the six months. 
+"
+1,64,"
+Net Metering Generation in Southern Province during the six months. 
+"
+1,65,"
+Total Energy Delivered to Uva Province Via GSS during the six months. 
+"
+1,66,"
+Total of the Boundary Meter Readings of Uva Province during the six months. 
+"
+1,67,"
+Total Embedded Generation in Uva Province during the six months. 
+"
+1,68,"
+Billing ? Retail Sales of Uva Province during the six months. 
+"
+1,69,"
+Billing ? Bulk Sales of Uva Province during the six months. 
+"
+1,70," 
+Total Street Lighting energy in Uva Province during the six months. 
+"
+1,71,"
+Total energy of Temporary Connections in Uva Province during the six months. 
+"
+1,72,"
+Net Metering Generation in Uva Province during the six months. 
+"
+1,73,Total Energy Delivered to WPN Via GSS during the six months.
+1,74,Total of the Boundary Meter Readings of WPN during the six months.
+1,75,Total Embedded Generation in WPN during the six months.
+1,76,Billing ? Retail Sales of WPN during the six months.
+1,77,Billing ? Bulk Sales of WPN during the six months.
+1,78,Total Street Lighting energy in WPN during the six months.
+1,79,Total energy of Temporary Connections in WPN during the six months.
+1,80,Net Metering Generation in WPN during the six months.
+1,81,"
+Total Energy Delivered to WPS I Via GSS during the six months. 
+"
+1,82,"
+Total of the Boundary Meter Readings of WPS I during the six months. 
+"
+1,83,"
+Total Embedded Generation in WPS I during the six months. 
+"
+1,84,"
+Billing ? Retail Sales of WPS I during the six months. 
+"
+1,85,"
+Billing ? Bulk Sales of WPS I during the six months. 
+"
+1,86,"
+Total Street Lighting energy in WPS I during the six months. 
+"
+1,87,"
+Total Energy Delivered to WPS II Via GSS during the six months. 
+"
+1,88,"
+Total of the Boundary Meter Readings of WPS II during the six months. 
+"
+1,89," 
+Total Embedded Generation in WPS II during the six months. 
+"
+1,90,"
+Billing ? Retail Sales of WPS II during the six months. 
+"
+1,91,"
+Billing ? Bulk Sales of WPS II during the six months. 
+"
+1,92,"
+Total Street Lighting energy in WPS II during the six months. 
+"
+1,93,"
+Total energy of Temporary Connections in WPS II during the six months. 
+"
+1,94,"
+Net Metering Generation in WPS II during the six months. 
+"
+2,95,Ordinary supply Debt as at end of a particular month in Colombo City
+2,96,Average monthly sales of three consecutive months of ordinary customers in Colombo City
+2,97,Bulk supply Debt as at end of a particular month in Colombo City
+2,98,Average monthly sales of three consecutive months of Bulk customers in Colombo City
+2,99,"Ordinary supply Debt as at end of a particular month in Central Province 
+"
+2,100,"
+Average monthly sales of three consecutive months of ordinary customers in Central Province 
+"
+2,101,Bulk supply Debt as at end of a particular month in Central Province 
+2,102,Average monthly sales of three consecutive months of Bulk customers in Central Province 
+2,103,"
+Ordinary supply Debt as at end of a particular month in Eastern Province 
+"
+2,104,"
+Average monthly sales of three consecutive months of ordinary customers in Eastern Province 
+"
+2,105,"
+Bulk supply Debt as at end of a particular month in Eastern Province 
+"
+2,106,"
+Average monthly sales of three consecutive months of Bulk customers in Eastern Province 
+"
+2,107,Ordinary supply Debt as at end of a particular month in NCP
+2,108,Average monthly sales of three consecutive months of ordinary customers in NCP
+2,109,Bulk supply Debt as at end of a particular month in NCP
+2,110,Average monthly sales of three consecutive months of Bulk customers in NCP
+2,111,Ordinary supply Debt as at end of a particular month in Northern Province 
+2,112,Average monthly sales of threeconsecutive months of ordinary customers in Northern Province 
+2,113,Bulk supply Debt as at end of a particular month in Northern Province 
+2,114,Average monthly sales of three consecutive months of Bulk customers in Northern Province 
+2,115,Ordinary supply Debt as at end of a particular month in NWP
+2,116,Average monthly sales of three consecutive months of ordinary customers in NWP
+2,117,Bulk supply Debt as at end of a particular month in NWP
+2,118,Average monthly sales of three consecutive months of Bulk customers in NWP
+2,119,"
+Ordinary supply Debt as at end of a particular month in Sabaragamuwa Province 
+"
+2,120,"Average monthly sales of three consecutive months of ordinary customers in Sabaragamuwa Province 
+"
+2,121,"
+Bulk supply Debt as at end of a particular month in Sabaragamuwa Province 
+"
+2,122," 
+Average monthly sales of three consecutive months of Bulk customers in Sabaragamuwa Province 
+"
+2,123," 
+Ordinary supply Debt as at end of a particular month in Southern Province 
+"
+2,124,"
+Average monthly sales of three consecutive months of ordinary customers in Southern Province 
+"
+2,125,"
+Bulk supply Debt as at end of a particular month in Southern Province 
+
+"
+2,126,"
+Average monthly sales of three consecutive months of Bulk customers in Southern Province 
+
+"
+2,127,"
+Ordinary supply Debt as at end of a particular month in Uva Province 
+"
+2,128,"
+Average monthly sales of three consecutive months of ordinary customers in Uva Province 
+"
+2,129," 
+Bulk supply Debt as at end of a particular month in Uva Province 
+"
+2,130,"
+Average monthly sales of three consecutive months of Bulk customers in Uva Province 
+"
+2,131,"
+Ordinary supply Debt as at end of a particular month in WPN 
+"
+2,132,"
+Average monthly sales of three consecutive months of ordinary customers in WPN 
+"
+2,133,"
+Bulk supply Debt as at end of a particular month in WPN 
+"
+2,134,"
+Average monthly sales of three consecutive months of Bulk customers in WPN 
+"
+2,135,Ordinary supply Debt as at end of a particular month in WPS I
+2,136,Average monthly sales of three consecutive months of ordinary customers in WPS I
+2,137,Bulk supply Debt as at end of a particular month in WPS I
+2,138,Average monthly sales of three consecutive months of Bulk customers in WPS I
+2,139,"
+Ordinary supply Debt as at end of a particular month in WPS II 
+"
+2,140,"
+Average monthly sales of three consecutive months of ordinary customers in WPS II 
+"
+2,141,"
+Bulk supply Debt as at end of a particular month in WPS II 
+"
+2,142,"
+Average monthly sales of three consecutive months of Bulk customers in WPS II 
+"
+3,143,Total Sustained Consumer interruption duration due to GSS Feeder Trippings during the month in Colombo City
+3,144,Total Sustained Consumer interruption duration due to HT Breakdowns during the month in Colombo City
+3,145,Total Sustained Consumer interruption duration due to LT Breakdowns during the month in Colombo City
+3,146,Total Sustained Consumer interruption duration due to HT Planned interruptions during the month in Colombo City
+3,147,Total Sustained Consumer interruption duration due to LT Planned interruptions during the month in Colombo City
+3,148,Total No. of consumers at the end of the month in Colombo City
+3,149,"
+Total Sustained Consumer interruption duration due to GSS Feeder Trippings during the month in Central Province 
+"
+3,150,"
+Total Sustained Consumer interruption duration due to HT Breakdownsduring the month in Central Province "
+3,151,Total Sustained Consumer interruption duration due to LT Breakdowns during the month in Central Province 
+3,152,Total Sustained Consumer interruption duration due to LT Planned interruptionsduring the month in Central Province 
+3,153,Total Sustained Consumer interruption duration due to HT Planned interruptions during the month in Central Province 
+3,154," 
+Total No. of consumers at the end of the monthin Central Province 
+"
+3,155,Total Sustained Consumer interruption duration due to GSS Feeder Trippings during the month in Eastern Province 
+3,156,"Total Sustained Consumer interruption duration due to HT Breakdownsduring the month in Eastern Province 
+"
+3,157,"
+Total Sustained Consumer interruption duration due to LT Breakdownsduring the month in Eastern Province "
+3,158,"
+Total Sustained Consumer interruption duration due to HT Planned interruptions during the month in Eastern Province "
+3,159,"
+Total Sustained Consumer interruption duration due to LT Planned interruptionsduring the month inEastern Province "
+3,160,"
+Total No. of consumers at the end of the monthin Eastern Province"
+3,161,Total Sustained Consumer interruption duration due to GSS Feeder Trippings during the month in NCP
+3,162,Total Sustained Consumer interruption duration due to HT Breakdowns during the month in NCP
+3,163,Total Sustained Consumer interruption duration due to LT Breakdowns during the month in NCP
+3,164,Total Sustained Consumer interruption duration due to HT Planned interruptions during the month in NCP
+3,165,Total Sustained Consumer interruption duration due to LT Planned interruptions during the month in NCP
+3,166,Total No. of consumers at the end of the month in NCP
+3,167,"
+Total Sustained Consumer interruption duration due to GSS Feeder Trippings during the month in Northern Province 
+
+"
+3,168,"
+Total Sustained Consumer interruption duration due to HT Breakdowns during the month in Northern Province. 
+"
+3,169," 
+Total Sustained Consumer interruption duration due to LT Breakdowns during the month in Northern Province 
+"
+3,170,"
+Total Sustained Consumer interruption duration due to HT Planned interruptions during the month in Northern Province 
+"
+3,171,"
+Total Sustained Consumer interruption duration due to LT Planned interruptions during the month in Northern Province 
+"
+3,172,"
+Total No. of consumers at the end of the month in Northern Province 
+"
+3,173,Total Sustained Consumer interruption duration due to GSS Feeder Trippings during the month in NWP
+3,174,Total Sustained Consumer interruption duration due to HT Breakdowns during the month in NWP
+3,175,Total Sustained Consumer interruption duration due to LT Breakdowns during the month in NWP
+3,176,Total Sustained Consumer interruption duration due to HT Planned interruptions during the month in NWP
+3,177,Total Sustained Consumer interruption duration due to LT Planned interruptions during the month in NWP
+3,178,Total No. of consumers at the end of the month in NWP
+3,179,"
+Total Sustained Consumer interruption duration due to GSS Feeder Trippings during the month in Sabaragamuwa Province 
+"
+3,180,"
+Total Sustained Consumer interruption duration due to HT Breakdownsduring the month inSabaragamuwa Province 
+"
+3,181,"
+Total Sustained Consumer interruption duration due to LT Breakdownsduring the month in NSabaragamuwa Province 
+"
+3,182,"
+Total Sustained Consumer interruption duration due to HT Planned interruptions during the month in Sabaragamuwa Province 
+"
+3,183,"
+Total Sustained Consumer interruption duration due to LT Planned interruptionsduring the month in Sabaragamuwa Province 
+"
+3,184," 
+Total No. of consumers at the end of the monthin Sabaragamuwa Province 
+"
+3,185,"
+Total Sustained Consumer interruption duration due to GSS Feeder Trippings during the month in Southern Province 
+"
+3,186,"
+Total Sustained Consumer interruption duration due to HT Breakdownsduring the month inSouthern Province 
+"
+3,187,"
+Total Sustained Consumer interruption duration due to LT Breakdownsduring the month in NSouthern Province 
+"
+3,188,"
+Total Sustained Consumer interruption duration due to HT Planned interruptions during the month in Southern Province 
+"
+3,189," 
+Total Sustained Consumer interruption duration due to LT Planned interruptionsduring the month in Southern Province 
+"
+3,190,"
+Total No. of consumers at the end of the monthin Southern Province 
+"
+3,191,"
+Total Sustained Consumer interruption duration due to GSS Feeder Trippings during the month in Uva Province 
+"
+3,192,"
+Total Sustained Consumer interruption duration due to HT Breakdownsduring the month in Uva Province 
+"
+3,193,"
+Total Sustained Consumer interruption duration due to LT Breakdownsduring the month in Uva Province 
+"
+3,194,"
+Total Sustained Consumer interruption duration due to HT Planned interruptions during the month in Uva Province 
+"
+3,195,"
+Total Sustained Consumer interruption duration due to LT Planned interruptionsduring the month inUva Province 
+"
+3,196," 
+Total No. of consumers at the end of the monthin Uva Province 
+"
+3,197,"
+Total Sustained Consumer interruption duration due to GSS Feeder Trippings during the month in WPN 
+"
+3,198,"
+Total Sustained Consumer interruption duration due to HT Breakdowns during the month in WPN 
+"
+3,199,"
+Total Sustained Consumer interruption duration due to LT Breakdowns during the month in WPN 
+"
+3,200,"
+Total Sustained Consumer interruption duration due to HT Planned interruptions during the month in WPN 
+"
+3,201,"
+Total Sustained Consumer interruption duration due to LT Planned interruptionsduring the month in WPN 
+"
+3,202,"
+Total No. of consumers at the end of the monthin WPN 
+"
+3,203,"
+Total Sustained Consumer interruption duration due to GSS Feeder Trippings during the month in WPS I 
+"
+3,204,"
+Total Sustained Consumer interruption duration due to HT Breakdownsduring the month in WPS I 
+"
+3,205,"
+Total Sustained Consumer interruption duration due to LT Breakdownsduring the month in WPS I 
+"
+3,206,"
+Total Sustained Consumer interruption duration due to HT Planned interruptions during the month in WPS I 
+"
+3,207,"
+Total Sustained Consumer interruption duration due to LT Planned interruptionsduring the month in WPS I 
+"
+3,208,"
+Total No. of consumers at the end of the monthin WPS I 
+"
+3,209,"
+Total Sustained Consumer interruption duration due to GSS Feeder Trippings during the month in WPS II 
+"
+3,210," 
+Total Sustained Consumer interruption duration due to HT Breakdowns during the month in WPS I 
+"
+3,211,"
+Total Sustained Consumer interruption duration due to LT Breakdownsduring the month in WPS II 
+"
+3,212,"
+Total Sustained Consumer interruption duration due to HT Planned interruptions during the month in WPS II 
+"
+3,213,"
+Total Sustained Consumer interruption duration due to LT Planned interruptionsduring the month in WPS II 
+"
+3,214,"
+Total No. of consumers at the end of the monthin WPS II 
+"
+4,215,Number of planned Interruptions carried out during the month in Colombo City
+4,216,Number of planned outages informed via SMS during the month in Colombo City
+4,217,Number of planned Interruptions carried out during the month in Central Province 
+4,218,"
+Number of planned outages informed via SMS during the month in Central Province 
+"
+4,219,"
+Number of planned Interruptions carried out during the month in Eastern Province "
+4,220,"
+Number of planned outages informed via SMS during the month in Eastern Province "
+4,221,Number of planned Interruptions carried out during the month in NCP
+4,222,Number of planned outages informed via SMS during the month in NCP
+4,223,"
+Number of planned Interruptions carried out during the month in Northern Province 
+"
+4,224,"
+Number of planned outages informed via SMS during the month in Northern Province 
+"
+4,225,Number of planned Interruptions carried out during the month in NWP
+4,226,Number of planned outages informed via SMS during the month in NWP
+4,227,"
+Number of planned Interruptions carried out during the month in Sabaragamuwa Province 
+"
+4,228,"
+Number of planned outages informed via SMS during the month in Sabaragamuwa Province 
+"
+4,229,"
+Number of planned Interruptions carried out during the month in Southern Province 
+"
+4,230,"
+Number of planned outages informed via SMS during the month in Southern Province 
+"
+4,231,"
+Number of planned Interruptions carried out during the month in Uva Province 
+"
+4,232," 
+Number of planned outages informed via SMS during the month in Uva Province 
+"
+4,233,Number of planned Interruptions carried out during the month in WPN
+4,234,Number of planned outages informed via SMS during the month in WPN
+4,235,"
+Number of planned Interruptions carried out during the month in WPS I 
+"
+4,236,"
+Number of planned outages informed via SMS during the month inWPS I 
+"
+4,237,"
+Number of planned Interruptions carried out during the month in WPS II 
+"
+4,238,"
+Number of planned outages informed via SMS during the month inWPS II 
+"
+5,239,Total number of areas in Colombo City as at the end of the month.
+5,240,Total number of Areas in Colombo City offering more than 3 standard CEB Services as Doorstep services as at the end of the month.
+5,241,"
+Total number of areas in Central as at the end of the month. 
+"
+5,242,Total number of Areas in Central offering more than 3 standard CEB Services as Doorstep services as at the end of the month. 
+5,243,"
+Total number of areas in Eastern as at the end of the month. "
+5,244,Total number of Areas in Eastern offering more than 3 standard CEB Services as Doorstep services as at the end of the month. 
+5,245,Total number of areas in NCP as at the end of the month.
+5,246,Total number of Areas in NCP offering more than 3 standard CEB Services as Doorstep services as at the end of the month.
+5,247,"
+Total number of areas in Northern Province as at the end of the month. 
+"
+5,248,"
+Total number of Areas in Northern Province offering more than 3 standard CEB Services as Doorstep services as at the end of the month. 
+"
+5,249,Total number of areas in NWP as at the end of the month.
+5,250,Total number of Areas in NWP offering more than 3 standard CEB Services as Doorstep services as at the end of the month.
+5,251," 
+Total number of Areas in Sabaragamuwa offering more than 3 standard CEB Services as Doorstep services as at the end of the month. 
+"
+5,252,"
+Total number of areas in Sabaragamuwa as at the end of the month. 
+"
+5,253,"
+Total number of areas in Southern Province as at the end of the month. 
+"
+5,254,"
+Total number of Areas in Southern Province offering more than 3 standard CEB Services as Doorstep services as at the end of the month. 
+"
+5,255,"
+Total number of areas in Uva as at the end of the month."
+5,256,"
+Total number of Areas in Uva offering more than 3 standard CEB Services as Doorstep services as at the end of the month. 
+"
+5,257,"
+Total number of areas in WPN as at the end of the month. 
+"
+5,258,"
+Total number of Areas in WPN offering more than 3 standard CEB Services as Doorstep services as at the end of the month. 
+"
+5,259,"
+Total number of areas in WPS I as at the end of the month. 
+"
+5,260,"
+Total number of Areas in WPS I offering more than 3 standard CEB Services as Doorstep services as at the end of the month. 
+"
+5,261," 
+Total number of areas in WPS II as at the end of the month. 
+"
+5,262,"
+Total number of Areas in WPS II offering more than 3 standard CEB Services as Doorstep services as at the end of the month. 
+"
+6,263,Customer visits during the month to Consumer Service Centres in the Colombo City to report or rectify an anomaly created due to a lapse in the CEB service.
+6,264,Number of consumers as at the end of the month in Consumer Service Centres in Colombo City
+6,265,"
+Customer visits during the month to Consumer Service Centres in CENTRAL PROVINCE to report or rectify an anomaly created due to a lapse in the CEB service. "
+6,266,Number of consumers as at the end of the month in Consumer Service Centres in CENTRAL PROVINCE 
+6,267,Customer visits during the month to Consumer Service Centres in EASTERN PROVINCE to report or rectify an anomaly created due to a lapse in the CEB service. 
+6,268," 
+Number of consumers as at the end of the month in Consumer Service Centres in EASTERN PROVINCE "
+6,269,Customer visits during the month to Consumer Service Centres in NCP to report or rectify an anomaly created due to a lapse in the CEB service.
+6,270,Number of consumers as at the end of the month in Consumer Service Centres in NCP
+6,271,"
+Customer visits during the month to Consumer Service Centres in NP to report or rectify an anomaly created due to a lapse in the CEB service. 
+"
+6,272,"
+Number of consumers as at the end of the month in Consumer Service Centres in NP 
+"
+6,273,Customer visits during the month to Consumer Service Centres in NWP to report or rectify an anomaly created due to a lapse in the CEB service.
+6,274,Number of consumers as at the end of the month in Consumer Service Centres in NWP
+6,275,"
+Customer visits during the month to Consumer Service Centres in Sabaragamuwa to report or rectify an anomaly created due to a lapse in the CEB service. 
+"
+6,276,"
+Number of consumers as at the end of the month in Consumer Service Centres in Sabaragamuwa 
+"
+6,277,"
+Customer visits during the month to Consumer Service Centres in Southern Province to report or rectify an anomaly created due to a lapse in the CEB service. 
+"
+6,278," 
+Number of consumers as at the end of the month in Consumer Service Centres in Southern Province 
+"
+6,279," 
+Customer visits during the month to Consumer Service Centres in Uva to report or rectify an anomaly created due to a lapse in the CEB service. 
+"
+6,280,"
+Number of consumers as at the end of the month in Consumer Service Centres in Uva 
+"
+6,281,Customer visits during the month to Consumer Service Centres in the wpn to report or rectify an anomaly created due to a lapse in the CEB service.
+6,282,Number of consumers as at the end of the month in Consumer Service Centres in WPN
+6,283," 
+Customer visits during the month to Consumer Service Centres in the WPS1 to report or rectify an anomaly created due to a lapse in the CEB service. 
+"
+6,284," 
+Number of consumers as at the end of the month in Consumer Service Centres in WPS1 
+"
+6,285,"
+Customer visits during the month to Consumer Service Centres in the WPS II to report or rectify an anomaly created due to a lapse in the CEB service. 
+"
+6,286,"
+Number of consumers as at the end of the month in Consumer Service Centres in WPS II 
+"
+7,287,Total number of Sustained Consumer interruptions due to HT Breakdowns during the month in Colombo City
+7,288,Total number of Sustained Consumer interruptions due to GSS Feeder Trippings during the month in Colombo City
+7,289,Total number of Sustained Consumer interruptions due to LT Breakdowns during the month in Colombo City
+7,290,Total number of Sustained Consumer interruptions due to HT Planned interruptions during the month in Colombo City
+7,291,Total number of Sustained Consumer interruptions due to LT Planned interruptions during the month in Colombo City
+7,292,Total No. of consumers at the end of the monthin Colombo City
+7,293,"
+Total number of Sustained Consumer interruptions due to GSS Feeder Trippings during the month in Central Province"
+7,294,Total number of Sustained Consumer interruptions due to HT Breakdowns during the month in Central Province 
+7,295,Total number of Sustained Consumer interruptions due to LT Breakdowns during the month in Central Province 
+7,296,"
+Total number of Sustained Consumer interruptions due to HT Planned interruptions during the month in Central Province"
+7,297,Total number of Sustained Consumer interruptions due to LT Planned interruptions during the month in Central Province 
+7,298,Total No. of consumers at the end of the monthin Central Province 
+7,299,Total number of Sustained Consumer interruptions due to GSS Feeder Trippings during the month in Eastern Province
+7,300,"
+Total number of Sustained Consumer interruptions due to HT Breakdowns during the month in Eastern Province "
+7,301,Total number of Sustained Consumer interruptions due to LT Breakdowns during the month in Eastern Province 
+7,302,"
+Total number of Sustained Consumer interruptions due to HT Planned interruptionsduring the month in Eastern Province "
+7,303,Total number of Sustained Consumer interruptions due to LT Planned interruptions during the month in Eastern Province
+7,304,Total No. of consumers at the end of the monthin Eastern Province 
+7,305,Total number of Sustained Consumer interruptions due to GSS Feeder Trippings during the month in NCP
+7,306,Total number of Sustained Consumer interruptions due to HT Breakdowns during the month in NCP
+7,307,Total number of Sustained Consumer interruptions due to LT Breakdowns during the month in NCP
+7,308,Total number of Sustained Consumer interruptions due to HT Planned interruptions during the month in NCP
+7,309,Total number of Sustained Consumer interruptions due to LT Planned interruptions during the month in NCP
+7,310,Total No. of consumers at the end of the monthin NCP
+7,311,"
+Total number of Sustained Consumer interruptions due to LT Breakdowns during the month in Northern Province 
+"
+7,312,"
+Total number of Sustained Consumer interruptions due to GSS Feeder Trippings during the month in Northern Province 
+"
+7,313,"
+Total number of Sustained Consumer interruptions due to LT Planned interruptions during the month in Northern Province 
+"
+7,314,"
+Total number of Sustained Consumer interruptions due to HT Planned interruptions during the month in Northern Province 
+"
+7,315,"
+Total number of Sustained Consumer interruptions due to HT Breakdowns during the month in Northern Province 
+"
+7,316," 
+Total No. of consumers at the end of the monthin Northern Province 
+"
+7,317,Total number of Sustained Consumer interruptions due to GSS Feeder Trippings during the month in NWP
+7,318,Total number of Sustained Consumer interruptions due to HT Breakdowns during the month in NWP
+7,319,Total number of Sustained Consumer interruptions due to LT Breakdowns during the month in NWP
+7,320,Total number of Sustained Consumer interruptions due to HT Planned interruptions during the month in NWP
+7,321,Total number of Sustained Consumer interruptions due to LT Planned interruptions during the month in NWP
+7,322,Total No. of consumers at the end of the monthin NWP
+7,323,"
+Total number of Sustained Consumer interruptions due to GSS Feeder Trippings during the month in Sabaragamuwa Province 
+"
+7,324,"
+Total number of Sustained Consumer interruptions due to HT Breakdowns during the month in Sabaragamuwa Province 
+"
+7,325," 
+Total number of Sustained Consumer interruptions due to LT Breakdowns during the month in Sabaragamuwa Province 
+"
+7,326,"
+Total number of Sustained Consumer interruptions due to HT Planned interruptions during the month in Sabaragamuwa Province 
+"
+7,327,"
+Total number of Sustained Consumer interruptions due to LT Planned interruptions during the month in Sabaragamuwa Province 
+"
+7,328,"
+Total No. of consumers at the end of the monthin Sabaragamuwa Province 
+"
+7,329,Total number of Sustained Consumer interruptions due to GSS Feeder Trippings during the month in Southern Province
+7,330,Total number of Sustained Consumer interruptions due to HT Breakdowns during the month in Southern Province
+7,331,Total number of Sustained Consumer interruptions due to LT Breakdowns during the month in Southern Province
+7,332,Total number of Sustained Consumer interruptions due to HT Planned interruptions during the month in Southern Province
+7,333,Total number of Sustained Consumer interruptions due to LT Planned interruptions during the month in Southern Province
+7,334,Total No. of consumers at the end of the monthin Southern
+7,335,"
+Total number of Sustained Consumer interruptions due to GSS Feeder Trippings during the month in Uva Province 
+"
+7,336,"
+Total number of Sustained Consumer interruptions due to HT Breakdowns during the month in Uva Province 
+"
+7,337,"
+Total number of Sustained Consumer interruptions due to LT Breakdowns during the month in Uva Province 
+"
+7,338,"
+Total number of Sustained Consumer interruptions due to HT Planned interruptions during the month in Uva Province 
+"
+7,339," 
+Total number of Sustained Consumer interruptions due to LT Planned interruptions during the month in Uva Province 
+"
+7,340," 
+Total No. of consumers at the end of the monthin Uva Province 
+"
+7,341,"
+Total number of Sustained Consumer interruptions due to GSS Feeder Trippings during the month in WPN 
+"
+7,342,"
+Total number of Sustained Consumer interruptions due to HT Breakdowns during the month in WPN 
+"
+7,343,"
+Total number of Sustained Consumer interruptions due to LT Breakdowns during the month in WPN 
+"
+7,344,"
+Total number of Sustained Consumer interruptions due to HT Planned interruptions during the month in WPN 
+"
+7,345," 
+Total number of Sustained Consumer interruptions due to LT Planned interruptions during the month in WPN 
+"
+7,346,"
+Total number of Sustained Consumer interruptions due to GSS Feeder Trippings during the month in WPS I 
+"
+7,347,"
+Total number of Sustained Consumer interruptions due to HT Breakdowns during the month in WPS I 
+"
+7,348,"
+Total number of Sustained Consumer interruptions due to LT Breakdowns during the month in WPS I 
+"
+7,349,"
+Total number of Sustained Consumer interruptions due to HT Planned interruptions during the month in WPS I 
+"
+7,350,"
+Total number of Sustained Consumer interruptions due to LT Planned interruptions during the month in WPS I 
+"
+7,351,"
+Total No. of consumers at the end of the monthin WPS I 
+"
+7,352,"Total number of Sustained Consumer interruptions due to GSS Feeder Trippings during the month in WPS II 
+"
+7,353,"
+Total number of Sustained Consumer interruptions due to HT Breakdowns during the month in WPS II 
+"
+7,354,"
+Total number of Sustained Consumer interruptions due to LT Breakdowns during the month in WPS II 
+"
+7,355,"
+Total number of Sustained Consumer interruptions due to HT Planned interruptions during the month in WPS II 
+"
+7,356,"
+Total number of Sustained Consumer interruptions due to LT Planned interruptions during the month in WPS II 
+"
+7,357,"
+Total No. of consumers at the end of the monthin WPS II 
+"
+8,358,Total number of customers as at the beginning of the month in Colombo City.
+8,359,Total number of registered customers for SMS Alert services in Colombo City as at the end of the month.
+8,360,"
+Total number of customers as at the beginning of the month in Central Province. 
+"
+8,361," 
+Total number of registered customers for SMS Alert services in Central Province as at the end of the month."
+8,362,Total number of customers as at the beginning of the month in Eastern Province. 
+8,363,Total number of registered customers for SMS Alert services in Eastern Province as at the end of the month.
+8,364,Total number of customers as at the beginning of the month in NCP.
+8,365,Total number of registered customers for SMS Alert services in NCP as at the end of the month.
+8,366,"
+Customer visits during the month to Consumer Service Centres in NP to report or rectify an anomaly created due to a lapse in the CEB service. 
+"
+8,367,"
+Number of consumers as at the end of the month in Consumer Service Centres in NP 
+"
+8,368,Total number of customers as at the beginning of the month in NWP.
+8,369,Total number of registered customers for SMS Alert services in NWP as at the end of the month.
+8,370," 
+Total number of customers as at the beginning of the month in Sabaragamuwa Province. 
+"
+8,371,"
+Total number of registered customers for SMS Alert services in Sabaragamuwa Province as at the end of the month. 
+"
+8,372,"
+Total number of customers as at the beginning of the month in Southern Province. 
+"
+8,373,"
+Total number of registered customers for SMS Alert services in Southern Province as at the end of the month. 
+"
+8,374,"
+Total number of customers as at the beginning of the month in Uva Province. 
+"
+8,375," 
+Total number of registered customers for SMS Alert services in Uva Province as at the end of the month. 
+"
+8,376,"
+Total number of customers as at the beginning of the month in WPN. 
+"
+8,377,"
+Total number of registered customers for SMS Alert services in WPN as at the end of the month. 
+"
+8,378,"
+Total number of customers as at the beginning of the month in WPS I. 
+"
+8,379,"
+Total number of registered customers for SMS Alert services in WPS I as at the end of the month. 
+"
+8,380,"
+Total number of customers as at the beginning of the month in WPS II. 
+"
+8,381,"
+Total number of registered customers for SMS Alert services in WPS II as at the end of the month. 
+"
+9,382,Number of LV schemes that have undergone a complete rehabilitation cycle any time during last 2 years in Area ?i? of Colombo City
+9,383,Total number of LV schemes in Area ?i? of Colombo City
+9,384,"
+Number of LV schemes that have undergone a complete rehabilitation cycle any time during last 2 years in Area ?i? in Central Province. "
+9,385,"
+Total number of LV schemes in Area ?i? in Central Province. "
+9,386,"
+Number of LV schemes that have undergone a complete rehabilitation cycle any time during last 2 years in Area ?i? in Eastern Province. "
+9,387,"
+Total number of LV schemes in Area ?i? in Eastern Province. "
+9,388,Number of LV schemes that have undergone a complete rehabilitation cycle any time during last 2 years in Area ?i? of NCP
+9,389,Total number of LV schemes in Area ?i? of NCP.
+9,390,"
+Number of LV schemes that have undergone a complete rehabilitation cycle any time during last 2 years in Area ?i? of Northern Province 
+"
+9,391,"
+Total number of LV scheme sin Area ?i? Northern Province. 
+"
+9,392,Number of LV schemes that have undergone a complete rehabilitation cycle any time during last 2 years in Area ?i? of NWP
+9,393,Total number of LV schemes in Area ?i? in NWP.
+9,394,"
+Number of LV schemes that have undergone a complete rehabilitation cycle any time during last 2 years in Area ?i? in Sabaragamuwa Province. 
+"
+9,395,"
+Total number of LV schemes in Area ?i? in Sabaragamuwa Province. 
+"
+9,396,"
+Number of LV schemes that have undergone a complete rehabilitation cycle any time during last 2 years in Area ?i? in Southern Province. 
+"
+9,397,"
+Total number of LV schemes in Area ?i? in Southern Province. 
+"
+9,398,"
+Number of LV schemes that have undergone a complete rehabilitation cycle any time during last 2 years in Area ?i? in Uva Province. 
+"
+9,399,"
+Total number of LV schemes in Area ?i? in Uva Province. 
+"
+9,400,"
+Number of LV schemes that have undergone a complete rehabilitation cycle any time during last 2 years in Area ?i? in WPN. 
+"
+9,401,"
+Total number of LV schemes in Area ?i? in WPN. 
+"
+9,402,"
+Number of LV schemes that have undergone a complete rehabilitation cycle any time during last 2 years in Area ?i? in Province WPS1 
+"
+9,403,"
+Total number of LV schemes in Area ?i? in Province WPS I 
+"
+9,404,"
+Number of LV schemes that have undergone a complete rehabilitation cycle any time during last 2 years in Area ?i? WPS II. 
+"
+9,405,"
+Total number of LV schemes in Area ?i? in WPS II. 
+"
+10,406,Number of different SMS alert services ?offered? to any Retail customer in Area?i? in Colombo City
+10,407,Number of different SMS alert services ?offered? to any Retail customer in Area ?i? in Central Province. 
+10,408,"
+Number of different SMS alert services ?offered? to any Retail customer in Area ?i? in Eastern Province. "
+10,409,Number of different SMS alert services ?offered? to any Retail customer in Area ?i? in NCP
+10,410,Number of different SMS alert services ?offered? to any Retail customer in Area ?i? in Northern Province. 
+10,411,Number of different SMS alert services ?offered? to any Retail customer in Area?i? in NWP
+10,412,Number of different SMS alert services ?offered? to any Retail customer in Area ?i? in Sabaragamuwa Province.
+10,413,"
+Number of different SMS alert services ?offered? to any Retail customer in Area?i? in Southern 
+"
+10,414,"
+Number of different SMS alert services ?offered? to any Retail customer in Area ?i? in Uva Province. 
+"
+10,415,"
+Number of different SMS alert services ?offered? to any Retail customer in Area ?i? in WPN 
+"
+,416,"
+Number of different SMS alert services ?offered? to any Retail customer in Area?i? in WPS I 
+"
+10,417,"
+Total number of Area offices in WPS I 
+"
+10,418,Number of different SMS alert services ?offered? to any Retail customer in Area ?i? in WPS II
+11,419,Number of standard services for which all information are available as a Document in Area ?i? in Colombo City
+11,420,Number of standard services for which all information are available as a Document in Area ?i? in Central Province. 
+11,421,"
+Number of standard services for which all information are available as a Document in Area ?i? in Eastern Province. "
+11,422,Number of standard services for which all information are available as a Document in Area ?i? in NCP
+11,423,Number of standard services for which all information are available as a Document in Area ?i? in Northern Province. 
+11,424,Number of standard services for which all information are available as a Document in Area ?i? in NWP
+11,425,Number of standard services for which all information are available as a Document in Area ?i? in Sabaragamuwa Province. 
+11,426,"
+Number of standard services for which all information are available as a Document in Area ?i? in Southern Province. 
+"
+11,427,"
+Number of standard services for which all information are available as a Document in Area ?i? in Uva Province. "
+11,428,"
+Number of standard services for which all information are available as a Document in Area ?i? in WPN 
+"
+11,429,Number of standard services for which all information are available as a Document in Area ?i? in WPS I 
+11,430,"
+Number of standard services for which all information are available as a Document in Area ?i? in WPS II 
+"
+12,431,Customer Perception Index on recent and expected future performance of Colombo City
+12,432,Customer Perception Index on Friendliness of Colombo City
+12,433,Customer Perception Index on Quality of work of Colombo City
+12,434,Customer Perception Index on Customer Service of Colombo City
+12,435,Customer perception index on Electricity Supply of Colombo City
+12,436,Customer Perception Index on recent and expected future performance of Central Province
+12,437,Customer Perception Index on Friendliness of Central Province
+12,438,"Customer Perception Index on recent and expected future performance of Eastern Province 
+"
+12,439,"
+Customer Perception Index on Friendliness of Eastern Province "
+12,440,"
+Customer Perception Index on Quality of work of Eastern Province"
+12,441,Customer Perception Index on Customer Service of Eastern Province 
+12,442,Customer perception index on Electricity Supply of Eastern Province 
+12,443,Customer Perception Index on recent and expected future performance of NCP
+12,444,Customer Perception Index on Friendliness of NCP
+12,445,Customer Perception Index on Quality of work of NCP
+12,446,Customer Perception Index on Customer Service of NCP
+12,447,Customer perception index on Electricity Supply of NCP
+12,448,Customer Perception Index on recent and expected future performance of Northern Province
+12,449,Customer Perception Index on Friendliness of Northern Province
+12,450,Customer Perception Index on Quality of work of Northern Province
+12,451,Customer Perception Index on Customer Service of Northern Province
+12,452,Customer perception index on Electricity Supply of Northern Province
+12,453,Customer Perception Index on recent and expected future performance of NWP
+12,454,Customer Perception Index on Friendliness of NWP
+12,455,Customer Perception Index on Quality of work of NWP
+12,456,Customer Perception Index on Customer Service of NWP
+12,457,Customer perception index on Electricity Supply of NWP
+12,458,"
+Customer Perception Index on recent and expected future performance of Sabaragamuwa Province 
+"
+12,459,"
+Customer Perception Index on Friendliness of Sabaragamuwa Province 
+"
+12,460,"
+Customer Perception Index on Quality of work of Sabaragamuwa Province 
+"
+12,461,"
+Customer Perception Index on Customer Service of Sabaragamuwa Province 
+"
+12,462,"
+Customer perception index on Electricity Supply of Sabaragamuwa Province 
+"
+12,463,"
+Customer Perception Index on recent and expected future performance of Southern Province 
+"
+12,464,"
+Customer Perception Index on Friendliness of Southern Province 
+"
+12,465,"
+Customer Perception Index on Quality of work of Southern Province 
+"
+12,466,"
+Customer Perception Index on Customer Service of Southern Province 
+"
+12,467,Customer Perception Index on Customer Service of Southern Province
+12,468,"
+Customer Perception Index on recent and expected future performance of Uva Province 
+"
+12,469,"
+Customer Perception Index on Customer Service of Uva Province 
+"
+12,470,"
+Customer Perception Index on Quality of work of Uva Province 
+"
+12,471,"
+Customer perception index on Electricity Supply of Uva Province 
+"
+12,472,"
+Customer Perception Index on Friendliness of Uva Province 
+"
+12,473,"
+Customer Perception Index on recent and expected future performance of WPN 
+"
+12,474," 
+Customer Perception Index on Friendliness of WPN 
+"
+12,475,"
+Customer Perception Index on Quality of work of WPN 
+"
+12,476,"
+Customer Perception Index on Customer Service of WPN 
+"
+12,477," 
+Customer perception index on Electricity Supply of WPN 
+"
+12,478,"
+Customer Perception Index on recent and expected future performance of WPS I 
+"
+12,479,"
+Customer Perception Index on Friendliness of WPS I 
+"
+12,480,"
+Customer Perception Index on Quality of work of WPS I 
+"
+12,481,"
+Customer Perception Index on Customer Service of WPS I 
+"
+12,482,"
+Customer perception index on Electricity Supply of WPS I 
+"
+12,483,"
+Customer Perception Index on recent and expected future performance of WPS II 
+"
+12,484," 
+Customer Perception Index on Friendliness of WPS II 
+"
+12,485,"
+Customer Perception Index on Quality of work of WPS II 
+"
+12,486,"
+Customer Perception Index on Customer Service of WPS II 
+"
+12,487,"
+Customer perception index on Electricity Supply of WPS II 
+"
+13,488,No of distribution substations having the Geographical Information and other Account details of ALL connected customers in a database in the Consumer Service Centre ?i? in Colombo City as at the end of a quarter.
+13,489,Total number of distribution substations operating in the Colombo City at the end of the quarter.
+13,490,No of distribution substations having the Geographical Information and other Account details of ALL connected customers in a database in the Consumer Service Centre ?i? in Central Province as at the end of a quarter. 
+13,491,"Total number of distribution substations operating in the Central Province at the end of the quarter. 
+"
+13,492,No of distribution substations having the Geographical Information and other Account details of ALL connected customers in a database in the Consumer Service Centre ?i? in Eastern Province as at the end of a quarter. 
+13,493,Total number of distribution substations operating in the Eastern Province at the end of the quarter. 
+13,494,No of distribution substations having the Geographical Information and other Account details of ALL connected customers in a database in the Consumer Service Centre ?i? in NCP as at the end of a quarter.
+13,495,Total number of distribution substations operating in the NCP at the end of the quarter.
+13,496,"
+No of distribution substations having the Geographical Information and other Account details of ALL connected customers in a database in the Consumer Service Centre ?i? in Northern Province as at the end of a quarter. 
+"
+13,497," 
+Total number of distribution substations operating in the Northern Province at the end of the quarter. 
+"
+13,498,No of distribution substations having the Geographical Information and other Account details of ALL connected customers in a database in the Consumer Service Centre ?i? in NWP as at the end of a quarter.
+13,499,Total number of distribution substations operating in the NWP at the end of the quarter.
+13,500,"
+No of distribution substations having the Geographical Information and other Account details of ALL connected customers in a database in the Consumer Service Centre ?i? in Sabaragamuwa Province as at the end of a quarter. 
+"
+13,501,"
+Total number of distribution substations operating in the Sabaragamuwa Province at the end of the quarter. 
+"
+13,502,"
+No of distribution substations having the Geographical Information and other Account details of ALL connected customers in a database in the Consumer Service Centre ?i? in Southern as at the end of a quarter. 
+"
+13,503,"
+Total number of distribution substations operating in the Southern at the end of the quarter. 
+"
+13,504,"
+No of distribution substations having the Geographical Information and other Account details of ALL connected customers in a database in the Consumer Service Centre ?i? in Uva Province as at the end of a quarter. 
+"
+13,505," 
+Total number of distribution substations operating in the Uva Province at the end of the quarter. 
+"
+13,506,"
+No of distribution substations having the Geographical Information and other Account details of ALL connected customers in a database in the Consumer Service Centre ?i? in WPN as at the end of a quarter. 
+"
+13,507,"
+Total number of distribution substations operating in the WPN at the end of the quarter. 
+"
+13,508,"
+No of distribution substations having the Geographical Information and other Account details of ALL connected customers in a database in the Consumer Service Centre ?i? in WPS I as at the end of a quarter. 
+"
+13,509," 
+Total number of distribution substations operating in the WPS I at the end of the quarter. 
+"
+13,510,"
+No of distribution substations having the Geographical Information and other Account details of ALL connected customers in a database in the Consumer Service Centre ?i? in WPS II as at the end of a quarter. 
+"
+13,511,"
+Total number of distribution substations operating in the WPS II at the end of the quarter. 
+"
+14,512,Number of additional services offered at Call Centers in Colombo City
+14,513,Number of additional services offered at Call Centers in Central 
+14,514,"
+Number of additional services offered at Call Centers in Eastern "
+14,515,Number of additional services offered at Call Centers in NCP
+14,516,Number of additional services offered at Call Centers in Northern Province 
+14,517,Number of additional services offered at Call Centers in NWP
+14,518,"
+Number of additional services offered at Call Centers in Sabaragamuwa Province. "
+14,519," 
+Number of additional services offered at Call Centers in Southern Province. 
+"
+14,520,"Number of additional services offered at Call Centers in Uva Province 
+"
+14,521,"
+Number of additional services offered at Call Centers in WPN 
+"
+14,522,"Number of additional services offered at Call Centers in WPS I 
+"
+14,523,"
+Number of additional services offered at Call Centers in WPS II 
+"
+15,524,Number of Major accidents occurred to staff in Division 01 during the 1stmonth of the quarter
+15,525,Number of Major accidents occurred to staff in Division 01 during the 2ndmonth of the quarter
+15,526,Number of Major accidents occurred to staff in Division 01 during the 3rdmonth of the quarter
+15,527,Number of Fatal accidents occurred to staff in Division 01 during the 1stmonth of the quarter
+15,528,Number of Fatal accidents occurred to staff in Division 01 during the 2ndmonth of the quarter
+15,529,Number of Fatal accidents occurred to staff in Division 01 during the 3rdmonth of the quarter
+15,530,Number of Major accidents occurred to staff in Division 02 during the 1stmonth of the quarter
+15,531,Number of Major accidents occurred to staff in Division 02 during the 2ndmonth of the quarter
+15,532,Number of Major accidents occurred to staff in Division 02 during the 3rdmonth of the quarter
+15,533,Number of Fatal accidents occurred to staff in Division 02 during the 1stmonth of the quarter
+15,534,Number of Fatal accidents occurred to staff in Division 02 during the 2ndmonth of the quarter
+15,535,Number of Fatal accidents occurred to staff in Division 02 during the 3rdmonth of the quarter
+15,536,Number of Major accidents occurred to staff in Division 03 during the 1stmonth of the quarter
+15,537,Number of Major accidents occurred to staff in Division 03 during the 2ndmonth of the quarter
+15,538,Number of Major accidents occurred to staff in Division 03 during the 3rdmonth of the quarter
+15,539,Number of Fatal accidents occurred to staff in Division 03 during the 1stmonth of the quarter
+15,540,Number of Fatal accidents occurred to staff in Division 03 during the 2ndmonth of the quarter
+15,541,Number of Fatal accidents occurred to staff in Division 03 during the 3rdmonth of the quarter
+15,542,Number of Major accidents occurred to staff in Division 04 during the 1stmonth of the quarter
+15,543,Number of Major accidents occurred to staff in Division 04 during the 2ndmonth of the quarter
+15,544,Number of Major accidents occurred to staff in Division 04 during the 3rdmonth of the quarter
+15,545,Number of Fatal accidents occurred to staff in Division 04 during the 1stmonth of the quarter
+15,546,Number of Fatal accidents occurred to staff in Division 04 during the 2ndmonth of the quarter
+15,547,Number of Fatal accidents occurred to staff in Division 04 during the 3rdmonth of the quarter

@@ -52,64 +52,69 @@ and open the template in the editor.
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-     
+
 
     </head>
 
-        <div class="content"ui-view ></div>
+    <div class="content"ui-view ></div>
 
-         <script  src="./scripts/ui.js"></script> 
-  
-        <script  src="./scripts/lib/jQuery/jquery-2.1.1.min.js"></script> 
-        <script  src="./scripts/lib/jQuery/jquery.soap.js"></script>        
-        <script src="./scripts/lib/bootstrap/bootstrap.min.js"></script>        
-        <script src="./scripts/lib/ie10-viewport-bug-workaround.js"></script>         
-        <script  src="./scripts/lib/angular/angular.min.js"></script>
-        <script src="./scripts/lib/angular/angular-ui-router.js"></script> 
-        <script src="./scripts/lib/angular/angular-route.js"></script>
-        <script src="./scripts/lib/angular/angular-animate.min.js"></script> 
-        <script src="./scripts/lib/angular/angular-messages.js"></script> 
-        <script src="./scripts/lib/raphael/raphael.js"></script> 
-        <script src="./scripts/lib/morris/morris.js"></script> 
-        <script src="./scripts/lib/plugins/moment.js"></script> 
-        <script src="./scripts/lib/plugins/ng-grid-flexible-height.js"></script> 
-        <script src="./scripts/lib/plugins/datetimepicker/datetimepicker.js"></script> 
-        <script src="./scripts/lib/plugins/bootstrapAngularJS/ui-bootstrap-tpls-0.11.2.min.js"></script> 
-        <script src="./scripts/lib/angular/lodash.min.js"></script>
-        <script src="./scripts/lib/angular/bluebird.js"></script>
-        <script src="./scripts/lib/angular/angular-google-maps.min.js"></script>
-        <script src="./scripts/lib/blockUI/blockUI.js"></script>
-        <script  src="./scripts/lib/angular/ui-grid.js"></script>
-        <script  src="./scripts/lib/jQueryUI/jquery-ui.js"></script> 
-        <script  src="./scripts/lib/jQueryUI/jquery-ui-1.10.4.autocomplete.js"></script> 
-        <script  src="./scripts/lib/angular/autocomplete.js"></script>
-        <script  src="./scripts/lib/js-xlsx/dist/xlsx.full.min.js"></script>
-        <script  src="./scripts/lib/xlsx-reader.js"></script>
-        <script  src="./scripts/lib/js-xlsx/jszip.js"></script>
-        <!--Library Files End-->  
+    <script  src="./scripts/ui.js"></script> 
 
-
-
-        <!--Angular Controller-->
-
-        <script  src="./scripts/app/controllers/app.js"></script>
-        <script  src="./scripts/app/controllers/module.js"></script>
-        <script  src="./scripts/app/controllers/excelController.js"></script>
-        <script  src="./scripts/app/controllers/loginController.js"></script>
-        
+    <script  src="./scripts/lib/jQuery/jquery-2.1.1.min.js"></script> 
+    <script  src="./scripts/lib/jQuery/jquery.soap.js"></script>        
+    <script src="./scripts/lib/bootstrap/bootstrap.min.js"></script>        
+    <script src="./scripts/lib/ie10-viewport-bug-workaround.js"></script>         
+    <script  src="./scripts/lib/angular/angular.min.js"></script>
+    <script src="./scripts/lib/angular/angular-ui-router.js"></script> 
+    <script src="./scripts/lib/angular/angular-route.js"></script>
+    <script src="./scripts/lib/angular/angular-animate.min.js"></script> 
+    <script src="./scripts/lib/angular/angular-messages.js"></script> 
+    <script src="./scripts/lib/raphael/raphael.js"></script> 
+    <script src="./scripts/lib/morris/morris.js"></script> 
+    <script src="./scripts/lib/plugins/moment.js"></script> 
+    <script src="./scripts/lib/plugins/ng-grid-flexible-height.js"></script> 
+    <script src="./scripts/lib/plugins/datetimepicker/datetimepicker.js"></script> 
+    <script src="./scripts/lib/plugins/bootstrapAngularJS/ui-bootstrap-tpls-0.11.2.min.js"></script> 
+    <script src="./scripts/lib/angular/lodash.min.js"></script>
+    <script src="./scripts/lib/angular/bluebird.js"></script>
+    <script src="./scripts/lib/angular/angular-google-maps.min.js"></script>
+    <script src="./scripts/lib/blockUI/blockUI.js"></script>
+    <script  src="./scripts/lib/angular/ui-grid.js"></script>
+    <script  src="./scripts/lib/jQueryUI/jquery-ui.js"></script> 
+    <script  src="./scripts/lib/jQueryUI/jquery-ui-1.10.4.autocomplete.js"></script> 
+    <script  src="./scripts/lib/angular/autocomplete.js"></script>
+    <script  src="./scripts/lib/js-xlsx/dist/xlsx.full.min.js"></script>
+    <script  src="./scripts/lib/xlsx-reader.js"></script>
+    <script  src="./scripts/lib/js-xlsx/jszip.js"></script>
+    <!--Library Files End-->  
 
 
 
-        <!--Angular Services-->
+    <!--Angular Controller-->
 
-        <script  src="./scripts/app/services/ajax.js"></script>
-        <script  src="./scripts/app/services/login.js"></script>
-        <script  src="./scripts/app/services/kpiService.js"></script>
+    <script  src="./scripts/app/controllers/app.js"></script>
+    <script  src="./scripts/app/controllers/module.js"></script>
+    <script  src="./scripts/app/controllers/excelController.js"></script>
+    <script  src="./scripts/app/controllers/loginController.js"></script>
 
-        <!--Angular Factories-->  
-<script  src="./scripts/app/factories/excelFactory.js"></script>
-       
-     
+
+
+
+    <!--Angular Services-->
+
+    <script  src="./scripts/app/services/ajax.js"></script>
+    <script  src="./scripts/app/services/login.js"></script>
+    <script  src="./scripts/app/services/kpiService.js"></script>
+
+    <!--Angular Factories-->  
+    <script  src="./scripts/app/factories/excelFactory.js"></script>
+
+    <!-- Nice Buttons -->
+    <link rel="stylesheet" type="text/css" href="./styles/lib/btn/component.css" />
+    <script src="./scripts/lib/btn/modernizr.custom.js"></script>
+    <script src="./scripts/lib/btn/classie.js"></script>
+    <script src="./scripts/lib/btn/uiProgressButton.js"></script>
+
 
 </html>
 

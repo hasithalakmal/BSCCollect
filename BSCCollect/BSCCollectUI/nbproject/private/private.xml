@@ -3,7 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/CEB/2ndMonth/BSCConnect/Project/BSCCollect/BSCCollectUI/web/scripts/app/services/kpiService.js</file>
+            <file>file:/D:/CEB/2ndMonth/BSCConnect/Project/BSCCollect/BSCCollectUI/web/scripts/app/factories/excelFactory.js</file>
+            <file>file:/D:/CEB/2ndMonth/BSCConnect/Project/BSCCollect/BSCCollectUI/web/scripts/app/controllers/excelController.js</file>
+            <file>file:/D:/CEB/2ndMonth/BSCConnect/Project/BSCCollect/BSCCollectUI/web/scripts/app/controllers/loginController.js</file>
+            <file>file:/D:/CEB/2ndMonth/BSCConnect/Project/BSCCollect/BSCCollectUI/web/views/upload.html</file>
+            <file>file:/D:/CEB/2ndMonth/BSCConnect/Project/BSCCollect/BSCCollectUI/web/views/upload.jsp</file>
         </group>
     </open-files>
 </project-private>

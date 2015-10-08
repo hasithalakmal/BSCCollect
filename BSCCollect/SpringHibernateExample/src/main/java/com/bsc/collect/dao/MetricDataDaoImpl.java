@@ -8,7 +8,6 @@ package com.bsc.collect.dao;
 import com.bsc.collect.model.MetricData;
 import com.bsc.collect.model.Province;
 import java.util.List;
-import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.springframework.stereotype.Repository;
 

@@ -9,22 +9,22 @@
             dataList = {
                 name: "dataList",
                 url: '/dataList',
-                templateUrl: './views/dataList.jsp',
+                templateUrl: './views/dataList.html',
                 controller: 'dataListController'
             },kpiConform = {
                 name: "kpiConform",
                 url: '/kpiConform',
-                templateUrl: './views/kpiConform.jsp',
+                templateUrl: './views/kpiConform.html',
                 controller: 'kpiConformController'
             },upload = {
                 name: "upload",
                 url: '/upload',
-                templateUrl: './views/upload.jsp',
+                templateUrl: './views/upload.html',
                 controller: 'PreviewController'
             },login = {
                 name: "login",
                 url: '/login',
-                templateUrl: './views/login.jsp',
+                templateUrl: './views/login.html',
                 controller: 'loginController'
             };
             
