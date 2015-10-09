@@ -6,34 +6,38 @@
 package com.bsc.collect.model;
 
 import java.io.Serializable;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 import javax.validation.constraints.Size;
-
 
 /**
  *
  * @author Hasitha
  */
-@Entity
-@Table(name = "province")
+@Entity(name = "ForeignKeyAssoEntity")
+@Table(name = "province", uniqueConstraints = {
+@UniqueConstraint(columnNames = "province_id"),
+@UniqueConstraint(columnNames = "province_name") })
 public class Province implements Serializable {
-
-   
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int province_id;
-    
+
     @Size(min = 1, max = 45)
     @Column(name = "province_name", nullable = false)
     private String province_name;
 
-   
+    
 
     public int getProvince_id() {
         return province_id;
@@ -54,9 +58,8 @@ public class Province implements Serializable {
     @Override
     public int hashCode() {
         int hash = 7;
-       
-        hash = 43 * hash + this.province_id;
-        hash = 43 * hash + (this.province_name != null ? this.province_name.hashCode() : 0);
+        hash = 61 * hash + this.province_id;
+        hash = 61 * hash + (this.province_name != null ? this.province_name.hashCode() : 0);
         return hash;
     }
 
@@ -69,7 +72,6 @@ public class Province implements Serializable {
             return false;
         }
         final Province other = (Province) obj;
-      
         if (this.province_id != other.province_id) {
             return false;
         }
@@ -84,7 +86,8 @@ public class Province implements Serializable {
         return "Province{" + "province_id=" + province_id + ", province_name=" + province_name + '}';
     }
 
-    
+   
+
     
     
 

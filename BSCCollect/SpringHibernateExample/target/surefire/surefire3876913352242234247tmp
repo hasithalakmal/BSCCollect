@@ -1,0 +1,7 @@
+#surefire
+#Thu Oct 08 14:14:12 IST 2015
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.0.2\\java\\maven-nblib\\netbeans-eventspy.jar
+user.dir=D\:\\GIT-Local\\BSCCollect\\BSCCollect\\SpringHibernateExample
+localRepository=C\:\\Users\\Hasitha\\.m2\\repository
+netbeans.deploy=true
+basedir=D\:\\GIT-Local\\BSCCollect\\BSCCollect\\SpringHibernateExample
