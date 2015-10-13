@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<!--
+<%-- 
+    Document   : upload
+    Created on : Sep 17, 2015, 11:26:07 AM
+    Author     : nizar
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+-->
+<html >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body class=" body " >
+        <div ng-controller="PreviewController">
+            <div class="col-lg-12  content">
+               
+                <div class="col-lg-12 kpi_container">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <div class='form-group  col-lg-offset-5 upload-container' ng-show="upload">
+                            <div class="fileUpload has-feedback ">
+                                <span class='upload-text '>Upload your  Datasheet<span class="glyphicon glyphicon-upload"></span></span>
+                                <input  name="excel_file" accept=".xlsm" type="file" class="upload    fileUpload" class=" bnt btn-upload btn-success  " value="Upload" onchange="angular.element(this).scope().fileChanged(this.files);" required="true" />
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <div ng-show="isProcessing">
+                                
+                                <div class=" selectpicker col-lg-offset-4 col-lg-6 has-feedback" >
+                                  <div ng-dropdown-multiselect="" options="kpiName" class="selectpicker" selected-model="kpiNamemodel" data-style="btn-primary" ></div>
+                                    <input type="submit"  value="Conform the Datasheet" class ="btn btn-primary btn-confrom glyphicon glyphicon-ok"   ng-click="confrom()">
+                                 
+                                </div>
+                               
+
+                            </div>
+                            <div ng-show="showStatus">
+                                <div class="gridStyle"  style="height:fit-content;width:100%;" ng-grid="kpiStatus"   ng-keypress="updatereson()" >
+                                    
+                                </div>
+                               
+                                </div>
+                            </div>
+
+
+                        </div1
+                        
+                    </form>
+                               
+                               
+                </div>
+                <script>
+                    
+                </script>
+
+
+
+
+            </div>
+            
+             
+
+        </div>
+    </body>
+</html>

@@ -8,7 +8,6 @@ package com.bsc.collect.controller;
 import com.bsc.collect.model.InsertedMetricData;
 import com.bsc.collect.service.InsertedMetricDataService;
 import com.bsc.collect.wrapper.InsertedMetricDataWrapper;
-import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

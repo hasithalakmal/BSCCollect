@@ -38,10 +38,12 @@ public class InsertedMetricDataDaoImpl extends AbstractDao<Integer, InsertedMetr
                 "CALL validate_data_insertion " + para);
 
         List result = query.list();
-        System.out.println("masso result is = " + result.toString());
-        insertedMetricData.setReason(result.toString());
+        String rs = result.get(0).toString();
+        System.out.println("masso result is = redda" + rs);
+        insertedMetricData.setReason(rs);
       //  System.out.println(insertedMetricData.toString());
-        return result;
+      //  return result;
+        return null;
     }
 
 }
