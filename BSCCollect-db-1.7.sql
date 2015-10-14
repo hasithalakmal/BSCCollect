@@ -3,7 +3,7 @@ USE `bsccollect`;
 
 
 DROP TABLE IF EXISTS `bscconnect_view`;
-/*!50001 DROP VIEW IF EXISTS `bscconnect_view`*/;
+
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
 
