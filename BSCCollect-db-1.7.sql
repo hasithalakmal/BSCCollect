@@ -6,10 +6,7 @@ DROP TABLE IF EXISTS `bscconnect_view`;
 /*!50001 DROP VIEW IF EXISTS `bscconnect_view`*/;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
-/*!50001 CREATE VIEW `bscconnect_view` AS SELECT 
- 1 AS `metric_name`,
- 1 AS `data_date`,
- 1 AS `value`*/;
+
 SET character_set_client = @saved_cs_client;
 
 --
