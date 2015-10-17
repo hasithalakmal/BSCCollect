@@ -25,7 +25,7 @@ public class ProsedeurControlsRemote {
     ResultSet rs;
 
     public ResultSet callProc(String procedure, String parameterSet) {
-        dbmc = new DataBaseManagement();
+        dbmc = DataBaseManagement.getInstance();
         con = (Connection) dbmc.setConnetctionRemote();
         query = "call " + dbmc.getDbname() + "." + procedure + parameterSet + ";";
         rs = dbmc.getResult(query, con);
@@ -35,7 +35,7 @@ public class ProsedeurControlsRemote {
     }
 
     public ResultSet callProc(String procedure) {
-        dbmc = new DataBaseManagement();
+        dbmc = DataBaseManagement.getInstance();
         con = (Connection) dbmc.setConnetctionRemote();
         query = "call " + dbmc.getDbname() + "." + procedure + "();";
         rs = dbmc.getResult(query, con);
@@ -47,7 +47,7 @@ public class ProsedeurControlsRemote {
     public int callQuery(String sql) {
          int x = 0;
          try {
-             dbmc = new DataBaseManagement();
+             dbmc = DataBaseManagement.getInstance();
              con = (Connection) dbmc.setConnetctionRemote();
              state = con.createStatement();
              x = state.executeUpdate(sql);

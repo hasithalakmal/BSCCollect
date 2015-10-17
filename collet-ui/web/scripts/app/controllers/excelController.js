@@ -10,13 +10,23 @@
                 $scope.kpiName = [];
                 $scope.kpiNamemodel = [];
                 $scope.isProcessing = false;
-                $scope.status =[];
+                $scope.status = [];
+                $scope.errors = [];
                 $scope.showStatus = false;
-                $scope.Selectedkpi =[];
+                $scope.Selectedkpi = [];
                 $scope.upload = true;
-                $scope.newstatus=[];
+                $scope.success = true;
+                $scope.loginf= true;
+                $scope.errorCount = 0;
+                $scope.errorMessag  = true;
+              
                 
+                $scope.newstatus = [];
                 
+
+                $scope.uploadtrue = function () { 
+                    $location.path('/upload');
+                };
                 $scope.fileChanged = function (files) {
                     $scope.sheets = [];
                     $scope.v = 0;
@@ -28,8 +38,8 @@
                         angular.forEach(kpi, function (kpiD, k) {
                             var kpiName = k;
                             var d = {
-                                id:k,
-                                label:k
+                                id: k,
+                                label: k
                             };
                             $scope.kpiName.push(d);
                             angular.forEach(kpiD, function (data) {
@@ -43,13 +53,13 @@
                                     if (Dvalue !== "MetricName") {
                                         date = Dvalue;
                                         var spdate = String(date).split("/");
-                                        var yyyy= spdate[2];
-                                        var mm= spdate[0];
-                                        var dd= spdate[1];
-                                      //  console.log(yyyy+'/'+mm +'/'+dd);
-                                        
-                                        fdate = (yyyy+'/'+mm +'/'+dd);
-                                        
+                                        var yyyy = spdate[2];
+                                        var mm = spdate[0];
+                                        var dd = spdate[1];
+                                        //  console.log(yyyy+'/'+mm +'/'+dd);
+
+                                        fdate = (yyyy + '/' + mm + '/' + dd);
+
                                     }
                                     var kpiObject = {
                                         "kpiName": kpiName,
@@ -61,47 +71,51 @@
                                     if ((kpiObject.date !== "") && (kpiObject.value !== "") && (typeof kpiObject.metricName === 'string')) {
                                         $scope.KPIData.push(kpiObject);
 
+
                                     }
                                 });
 
                             });
 
                         });
+                        console.log($scope.KPIData);
                         $scope.v += 150;
+                        
                         //  $scope.isProcessing = false;
                         // console.log($scope.KPIData.length);
                         if ($scope.KPIData.length > 0) {
                             $scope.isProcessing = true;
+                            $scope.upload = false;
                         }
-                        
+
 
                     });
                 };
-            /* $scope.statusdata =[{"kpiName":"Distribution_loss","metricName":"Total Energy Delivered to Colombo City Via GSS during the six months.",
-   "date":"12/31/2014",
-   "value":" 52.00 ",
-   "comment":1
-  },
- {"kpiName":"Distribution_loss",
-  "metricName":"Total Energy Delivered to Colombo City Via GSS during the six months.",
-  "date":"06/31/2015",
-  "value":" 65.00 ",
-  "comment":"Metric is not defined"
- },
- {"kpiName":"Distribution_loss",
-  "metricName":"Total of the Boundary Meter Readings of Colombo City during the six months.",
-  "date":"12/31/2014",
-  "value":" 53.00 ",
- "comment":"data is updated"
- },
- {"kpiName":"Distribution_loss",
-  "metricName":"Total of the Boundary Meter Readings of Colombo City during the six months.",
-  "date":"06/31/2015",
-  "value":" 69.00 ",
- "comment":"data is inserted"
- }
-];
-                   $scope.updateJSONString = function () {
+                /* $scope.statusdata =[{"kpiName":"Distribution_loss","metricName":"Total Energy Delivered to Colombo City Via GSS during the six months.",
+                 "date":"12/31/2014",
+                 "value":" 52.00 ",
+                 "comment":1
+                 },
+                 {"kpiName":"Distribution_loss",
+                 "metricName":"Total Energy Delivered to Colombo City Via GSS during the six months.",
+                 "date":"06/31/2015",
+                 "value":" 65.00 ",
+                 "comment":"Metric is not defined"
+                 },
+                 {"kpiName":"Distribution_loss",
+                 "metricName":"Total of the Boundary Meter Readings of Colombo City during the six months.",
+                 "date":"12/31/2014",
+                 "value":" 53.00 ",
+                 "comment":"data is updated"
+                 },
+                 {"kpiName":"Distribution_loss",
+                 "metricName":"Total of the Boundary Meter Readings of Colombo City during the six months.",
+                 "date":"06/31/2015",
+                 "value":" 69.00 ",
+                 "comment":"data is inserted"
+                 }
+                 ];
+                 $scope.updateJSONString = function () {
                  $scope.KPIData = [];
                  $scope.json_string = JSON.stringify($scope.sheets[$scope.selectedSheetName]);
                  $scope.kpidata = $scope.sheets[$scope.selectedSheetName];
@@ -135,29 +149,44 @@
                  };
                  
                  */
-                 //data();
-            
-                   $scope.kpiStatus = {
-                    data:'status',
-                     columnDefs  : [ 
-                    {field : 'metricName',width:'50%', displayName : 'Metric Name',enableCellEdit: true, cellTemplate: '<div ng-class="{red: row.entity.reason == \'[MND]\', green: row.getProperty(\'reason\') != [MDN]}"   ><div class="ngCellText" >{{row.getProperty(col.field)}}</div></div>'},
-                    {field : 'date',width:'10%', displayName : 'Date'},
-                    {field : 'value',width:'10%', displayName : 'Value' ,enableCellEdit: true,cellTemplate: '<div class="ngCellText"  >{{row.getProperty(col.field)}}</div>'},
-                    {field : 'reason', displayName : 'Status',enableCellEdit: false
-                    }]
+                //data();
+
+                $scope.kpiStatus = {
+                    data: 'errors',
+                    columnDefs: [
+                        {field: 'metricName', width: '50%', displayName: 'Metric Name', enableCellEdit: true, cellTemplate: '<div ng-class="{red: row.entity.reason === \'Metric is not defined. Pleace check the new excel template\' || row.entity.reason === \'User is not defined. Pleace log in as collect user\' }"><div class="ngCellText" >{{row.getProperty(col.field)}}</div></div>'},
+                        {field: 'date', width: '10%', displayName: 'Date'},
+                        {field: 'value', width: '10%', displayName: 'Value', enableCellEdit: true,cellTemplate: '<div ng-class="{yellow: row.entity.reason === \'value is too low - data is updated\' || row.entity.reason === \'value is too High - data is updated\' ||  row.entity.reason === \'value is too low - data is inserted\' || row.entity.reason === \'value is too High - data is updated\'}"><div class="ngCellText" >{{row.getProperty(col.field)}}</div></div>'},
+                        {field: 'reason', displayName: 'Status', enableCellEdit: false
+                        }],
+                    
+                    
                 };
-                
+
                 function reset() {
                     $scope.isProcessing = false;
+                     $scope.loginf = true;
                 }
                 ;
-                
-                
+
+
                 $scope.KPITable = {
                     data: 'KPIData',
                     totalServerItems: 'totalServerItems',
                     pagingOptions: $scope.pagingOptions,
                     filterOptions: $scope.filterOptions
+                };
+
+                $scope.checkStatus = function () {
+                    var status = $scope.status;
+                    var errorCount = 0;
+                    angular.forEach(status, function (d) {
+
+
+                    });
+                    if (errorCount > 0) {
+                        $scope.showStatus = true;
+                    }
                 };
 
                 $scope.showPreviewChanged = function () {
@@ -171,59 +200,201 @@
                     }
                 };
 
-                 $scope.updatereson = function () {
-                     var d =$scope.status;
-                     angular.forEach(d , function (k){
-                         var data = {
-                             "kpiName":k.kpiName,
-                             "metricName":k.metricName,
-                             "date":"20"+k.date,
-                             "value":k.value
-                         };
-                         $scope.newstatus.push(data);
-                     });
-                     
-                     
-                    var obj =  {
-                        "insertedMetricDatas":$scope.newstatus
+
+                $scope.forcSubmit = function () {
+                    var d = $scope.errors;
+                    $scope.newstatus = [];
+                    angular.forEach(d, function (k) {
+                        var data = {
+                            "kpiName": k.kpiName,
+                            "metricName": k.metricName,
+                            "date":  k.date,
+                            "value": k.value
+                        };
+                        $scope.newstatus.push(data);
+                        if (!$scope.$$phase)
+                                 $scope.$apply();
+                        
+                    });
+
+
+                    var obj = {
+                        "insertedMetricDatas": $scope.newstatus
                     };
                     console.log(obj);
                     kpiService.confrom(angular.toJson(obj)).then(function (data) {
                         var s = data.response;
+                        var errorCount = 0;
+                        $scope.errors = [];
+                        angular.forEach(s, function (d) {
+                            $scope.status.push(d);
+                            console.log(d);
+                            if ( (d.reason === 'Metric is not defined. Pleace check the new excel template')
+                                || (d.reason === 'User is not defined. Pleace log in as collect user')) {
+                                errorCount += 1;
+                                $scope.errors.push(d);
+                                if (!$scope.$$phase)
+                                 $scope.$apply();
+                                console.log(d.reason);
+                            }
+
+                        });
                         
-                    //    console.log($scope.status);
-                        $scope.showStatus =true;
+                        if (errorCount > 0) {
+                            $scope.showStatus = true;
+                            $scope.success = true;
+                           
+
+                        } else {
+                            kpiService.confromRemote();
+                            $scope.showStatus = false;
+                            $scope.loginf = true;
+                            $scope.success = false;
+                            $scope.status = [];
+                            
+                            
+                        }
+                        //    console.log($scope.status);
+                       
                         $scope.upload = false;
+                        
                         if (!$scope.$$phase)
                             $scope.$apply();
                     });
                     reset();
-                    
+
+                };
+                
+                $scope.updatereson = function () {
+                    var d = $scope.errors;
+                    $scope.newstatus = [];
+                    angular.forEach(d, function (k) {
+                        var data = {
+                            "kpiName": k.kpiName,
+                            "metricName": k.metricName,
+                            "date":  k.date,
+                            "value": k.value
+                        };
+                        $scope.newstatus.push(data);
+                        if (!$scope.$$phase)
+                                 $scope.$apply();
+                        
+                    });
+
+
+                    var obj = {
+                        "insertedMetricDatas": $scope.newstatus
+                    };
+                    console.log(obj);
+                    kpiService.confrom(angular.toJson(obj)).then(function (data) {
+                        console.log(data);
+                        var s = data.response;
+                        var errorCount = 0;
+                        $scope.errors = [];
+                        angular.forEach(s, function (d) {
+                            $scope.status.push(d);
+                            console.log(d);
+                            if ((d.reason === 'value is too low - data is updated')
+                                    || (d.reason === 'value is too low - data is inserted')
+                                    || (d.reason === 'value is too High - data is updated')
+                                    || (d.reason === 'value is too High - data is inserted')
+                                    || (d.reason ==='value is too High - same data value ignored')
+                                    ||(d.reason === 'value is too low - same data value ignored')
+                                    || (d.reason === 'Metric is not defined. Pleace check the new excel template')
+                                    || (d.reason === 'User is not defined. Pleace log in as collect user')) {
+                                errorCount += 1;
+                                $scope.errors.push(d);
+                                if (!$scope.$$phase)
+                                 $scope.$apply();
+                                console.log(d.reason);
+                            }
+
+
+                        });
+                        if (errorCount > 0) {
+                            $scope.showStatus = true;
+                            $scope.success = true;
+
+                        } else {
+                            kpiService.confromRemote().then(function (data) {
+                               console.log(data);
+                           });
+                            $scope.showStatus = false;
+                            $scope.loginf = true;
+                            $scope.success = false;
+                            $scope.status = [];
+                            
+                            
+                            
+                        }
+                        //    console.log($scope.status);
+                       
+                        $scope.upload = false;
+                        
+                        if (!$scope.$$phase)
+                            $scope.$apply();
+                    }),function(data){
+                        $scope.errorMessag = false;
+                    };
+                    reset();
+
                 };
 
                 $scope.confrom = function () {
-                    
+
                     var obj = {
-                        "insertedMetricDatas":$scope.KPIData
+                        "insertedMetricDatas": $scope.KPIData
                     };
-                    
+                    console.log(obj);
                     kpiService.confrom(angular.toJson(obj)).then(function (data) {
+                       
                         var s = data.response;
-                        angular.forEach(s ,function (d){
-                           $scope.status.push(d); 
-                           console.log(d);
+                        var errorCount = 0;
+                        $scope.status =[];
+                        angular.forEach(s, function (d) {
+                            $scope.status.push(d);
+                            console.log(d);
+                            if ((d.reason === 'value is too low - data is updated')
+                                    || (d.reason === 'value is too low - data is inserted')
+                                    || (d.reason === 'value is too High - data is updated')
+                                    || (d.reason === 'value is too High - data is inserted')
+                                    || (d.reason === 'Metric is not defined. Pleace check the new excel template')
+                                    || (d.reason === 'User is not defined. Pleace log in as collect user')) {
+                                errorCount += 1;
+                                $scope.errors.push(d);
+                                console.log(d.reason);
+                            }
+
+
                         });
-                    //    console.log($scope.status);
-                        $scope.showStatus =true;
+                        if (errorCount > 0) {
+                            
+                            $scope.showStatus = true;
+                            $scope.success = true;
+                            
+
+                        } else {
+                           kpiService.confromRemote().then(function (data) {
+                               console.log(data);
+                           });
+                            $scope.showStatus = false;
+                            $scope.loginf = true;
+                            $scope.success = false;
+                            
+                        }
+                        //    console.log($scope.status);
+
                         $scope.upload = false;
-                      //  console.log($scope.status);
+                        //  console.log($scope.status);
                         reset();
                         if (!$scope.$$phase)
                             $scope.$apply();
                         $scope.KPIData = [];
+                    },function(data){
+                        $scope.errorMessag = false;
                     });
                     reset();
-                    
+
                 };
             });
 })(angular);

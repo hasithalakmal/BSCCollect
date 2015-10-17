@@ -26,7 +26,13 @@
                 url: '/login',
                 templateUrl: './views/login.html',
                 controller: 'loginController'
-            };
+            },admin = {
+                name: "admin",
+                url: '/admin',
+                templateUrl: './views/admin.html',
+                controller: 'AdminController'
+            }
+                    ;
             
 
             
@@ -34,6 +40,7 @@
             $stateProvider.state(kpiConform);
             $stateProvider.state(upload);
             $stateProvider.state(login);
+            $stateProvider.state(admin);
             
             
         }]).run(['$rootScope', '$state', '$stateParams',

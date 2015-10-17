@@ -22,7 +22,7 @@ public class testMain {
     public static void main(String[] args) throws IOException {
         try {
             
-            DataBaseManagement d = new DataBaseManagement();
+            DataBaseManagement d =  DataBaseManagement.getInstance();
             Connection con1 = d.setConnetctionRemote();
             ResultSet ans = d.getResult("select * from latestdata;", con1);
             while (ans.next()) {

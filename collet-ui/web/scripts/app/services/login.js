@@ -4,7 +4,6 @@
 
 
         self.login = function (data, callback) {
-            alert(data);
             return ajaxService.get({
                 url: '',
                 data: data,

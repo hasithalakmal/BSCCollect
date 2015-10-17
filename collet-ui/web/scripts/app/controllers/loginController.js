@@ -1,9 +1,15 @@
 (function (angular) {
-     angular.module('bcsCollectControllers').controller("loginController", ['$scope', 'loginService',
-        function ($scope, loginService) {
+     angular.module('bcsCollectControllers').controller("loginController", ['$scope', 'loginService','$location',
+        function ($scope, loginService,$location) {
         $scope.username ="";
         $scope.password ="";
         $scope.User = [];
+        $scope.loginf = true;
+        
+        if($location.path()==""){
+           $scope.loginf = false; 
+       }
+       
             $scope.login = function () {
                 
                 var user =
@@ -14,10 +20,25 @@
                         
                  $scope.User.push(user);
                  
+                 if($scope.username == "user" && $scope.password=="password"){
+                     $scope.username="";
+                     $scope.password="";
+                        $location.path('/upload');
+                        $scope.loginf = true;
+                    }
+                    
+                    if($scope.username == "admin" && $scope.password=="admin"){
+                        $scope.username="";
+                     $scope.password="";
+                        $location.path('/admin');
+                        $scope.loginf = true;
+                    }
+                 
                  var obj = $scope.User;
-                        alert('Login Success'+user);
+                        
                 loginService.login(angular.toJson(obj)).then(function (data) {
                     var d = data;
+                    
                     if (!$scope.$$phase)
                         $scope.$apply();
                     

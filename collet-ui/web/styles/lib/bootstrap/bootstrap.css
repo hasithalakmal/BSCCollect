@@ -973,6 +973,13 @@ hr {
   border: 0;
   border-top: 1px solid #eee;
 }
+
+.kpiNamedropDown{
+    position: relative;
+    top:150px ;
+    //multiply by screen size
+    
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -6108,7 +6115,14 @@ button.close {
     width:440px;
     min-width:220px;
     max-width:440px;
-    background-color:#4cae4c;
+    background-color:#EDB92B;
+    
+}
+.bnt-kpiConform{
+    width:440px;
+    min-width:220px;
+    max-width:440px;
+    background-color:#FDFDFD;
     
 }
 .clearfix:after,
