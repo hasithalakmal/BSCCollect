@@ -33,16 +33,26 @@ public class TrancferData {
             ProsedeurControlsLocal pcl = new ProsedeurControlsLocal();
             pcr.callQuery("TRUNCATE latestdata;");
             ResultSet res = pcl.callProc("selectConnectData");
-            
+            String sql = "insert into latestdata(metricname,date,value) values";
+            boolean flag=false;
             while(res.next()){
                 String metricname = res.getString(1);
                 String date = res.getString(2);
                 float value = res.getFloat(3);
                 
-                String para= "('"+metricname+"','"+date+"',"+value+");";
+                String para= "('"+metricname+"','"+date+"',"+value+")";
                // System.out.println(para);
-                pcr.callQuery("insert into latestdata(metricname,date,value) values"+para);
+                if(flag){
+                    sql= sql+" , "+para;
+                }else{
+                    sql= sql+para;
+                    flag = true;
+                }
+               
             }
+            sql=sql+";";
+            System.out.println("hello massa... "+ sql);
+            pcr.callQuery(sql);
         } catch (SQLException ex) {
             Logger.getLogger(TrancferData.class.getName()).log(Level.SEVERE, null, ex);
         }

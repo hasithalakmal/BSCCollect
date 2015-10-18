@@ -52,7 +52,7 @@ public class ProsedeurControlsRemote {
              state = con.createStatement();
              x = state.executeUpdate(sql);
              
-             System.out.println(sql);
+            // System.out.println(sql);
              
          } catch (SQLException ex) {
              Logger.getLogger(ProsedeurControlsRemote.class.getName()).log(Level.SEVERE, null, ex);
