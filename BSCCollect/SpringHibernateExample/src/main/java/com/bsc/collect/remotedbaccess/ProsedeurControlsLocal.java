@@ -29,7 +29,7 @@ public class ProsedeurControlsLocal {
     }
 
     public ResultSet callProc(String procedure) {
-        dbmc = DataBaseManagement.getInstance();;
+        dbmc = DataBaseManagement.getInstance();
         con = (Connection) dbmc.setConnetctionLocal();
         query = "call "+dbmc.getDbname()+"." + procedure + "();";
          System.out.println(query);

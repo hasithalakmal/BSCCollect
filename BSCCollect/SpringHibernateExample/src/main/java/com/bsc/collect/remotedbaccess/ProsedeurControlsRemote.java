@@ -9,10 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Date;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -47,24 +44,44 @@ public class ProsedeurControlsRemote {
 
     }
 
-    public int callQuery(String sql) {
+    public String callQuery(String sql) {
+        String transaction_state = "";
+      //  System.out.println("1");
         int x = 0;
         try {
+           // System.out.println("2");
             dbmc = DataBaseManagement.getInstance();
-            con = (Connection) dbmc.setConnetctionRemote();
-            state = con.createStatement();
-            x = state.executeUpdate(sql);
-            System.out.println(sql);
+           // System.out.println("3");
+            transaction_state = dbmc.getErrorState();
+            if (transaction_state.equals("success")) {
+                //System.out.println(transaction_state);
+                con = (Connection) dbmc.setConnetctionRemote();
+               // System.out.println("4");
+                transaction_state = dbmc.getErrorState();
+                if (transaction_state.equals("success")) {
+                    state = con.createStatement();
+                    transaction_state = dbmc.getErrorState();
+                    if (transaction_state.equals("success")) {
+                       // System.out.println("  >>>> " + transaction_state);
+                        x = state.executeUpdate(sql);
+                       // System.out.println("x>>>" + x + "  >>>> " + transaction_state);
+                       // System.out.println(sql);
+                        transaction_state = "success";
+                    }
+                }
+            }
+
         } catch (SQLException ex) {
-            Logger.getLogger(ProsedeurControlsRemote.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("erroe callQuery");
+            transaction_state = ex.toString();
+        }finally{
+             return transaction_state;
         }
 
-        return x;
     }
 
-   
-
-    public void insertdatatoremotedb(List metriclist, List datelist, List valuelist) {
+    public String insertdatatoremotedb(List metriclist, List datelist, List valuelist) {
+        String transaction_state = "";
         try {
             dbmc = DataBaseManagement.getInstance();
             con = (Connection) dbmc.setConnetctionRemote();
@@ -90,11 +107,15 @@ public class ProsedeurControlsRemote {
             // since there were no errors, commit
             con.commit();
 
-          //  rs.close();
+            //  rs.close();
             st.close();
-           // con.close();
+            // con.close();
+            transaction_state = "success";
         } catch (SQLException ex) {
-            Logger.getLogger(ProsedeurControlsRemote.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("error Remotedb");
+            transaction_state = ex.toString();
+        } finally {
+            return transaction_state;
         }
     }
 

@@ -18,11 +18,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class BSCConnectRestController {
 
     //-------------------Retrieve Test Provinces--------------------------------------------------------
-    @RequestMapping(value = "/bscconnect/", method = RequestMethod.GET)
-    public void Tranfrerdatatoconnect() {
+    @RequestMapping(value = "/bscconnect/", method = RequestMethod.POST)
+    public String Tranfrerdatatoconnect() {
         TrancferData td = new TrancferData();
-        td.transferdata();
-        System.out.println("ok");
+        String transaction_state = td.transferdata();
+        System.out.println(transaction_state);
+
+        
+        return transaction_state;
     }
 
 }

@@ -10,66 +10,59 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import static org.joda.time.format.ISODateTimeFormat.date;
 
 /**
  *
  * @author Hasitha
  */
 public class TrancferData {
+
+    /*  private static TrancferData td;
     
-  /*  private static TrancferData td;
+     private TrancferData(){
+     td = new TrancferData();
+     }
     
-    private TrancferData(){
-        td = new TrancferData();
-    }
-    
-    public static TrancferData getInstance(){
-        return td;
-    }*/
-    
-    
-    public void transferdata(){
+     public static TrancferData getInstance(){
+     return td;
+     }*/
+    public String transferdata() {
+        String transaction_state = "";
         try {
             List metriclist = new ArrayList();
             List datelist = new ArrayList();
             List valuelist = new ArrayList();
-            
+
             ProsedeurControlsRemote pcr = new ProsedeurControlsRemote();
             ProsedeurControlsLocal pcl = new ProsedeurControlsLocal();
-            pcr.callQuery("TRUNCATE latestdata;");
-            ResultSet res = pcl.callProc("selectConnectData");
-          //  String sql = "insert into latestdata(metricname,date,value) values";
-            boolean flag=false;
-            while(res.next()){
-                String metricname = res.getString(1);
-                Date date = res.getDate(2);
-                float value = res.getFloat(3);
-                
-                metriclist.add(metricname);
-                datelist.add(date);
-                valuelist.add(value);
-                
-                
-               // String para= "('"+metricname+"','"+date+"',"+value+")";
-               // System.out.println(para);
-              /*  if(flag){
-                    sql= sql+" , "+para;
-                }else{
-                    sql= sql+para;
-                    flag = true;
-                }*/
-               
+            transaction_state = pcr.callQuery("TRUNCATE latestdata;");
+            System.out.println("Truncate>>>>>>>>>>" + transaction_state);
+            if (transaction_state.equals("success")) {
+                ResultSet res = pcl.callProc("selectConnectData");
+
+                boolean flag = false;
+                while (res.next()) {
+                    String metricname = res.getString(1);
+                    Date date = res.getDate(2);
+                    float value = res.getFloat(3);
+
+                    metriclist.add(metricname);
+                    datelist.add(date);
+                    valuelist.add(value);
+
+                }
+                System.out.println(metriclist);
+                transaction_state = pcr.insertdatatoremotedb(metriclist, datelist, valuelist);
+                System.out.println("transacction commit "+transaction_state);
             }
-            System.out.println(metriclist);
-            pcr.insertdatatoremotedb(metriclist, datelist, valuelist);
-           // sql=sql+";";
-           // System.out.println("hello massa... "+ sql);
-          //  pcr.callQuery(sql);
+
         } catch (SQLException ex) {
-            Logger.getLogger(TrancferData.class.getName()).log(Level.SEVERE, null, ex);
+            transaction_state = ex.toString();
+            System.out.println("errorrrrrr>>>>>>>>>>>>" + transaction_state);
+        } finally {
+            System.out.println("transaction_state>>>>>>>" + transaction_state);
+          //  transaction_state = "{'state':'"+transaction_state+"'}";
+            return transaction_state;
         }
     }
 }

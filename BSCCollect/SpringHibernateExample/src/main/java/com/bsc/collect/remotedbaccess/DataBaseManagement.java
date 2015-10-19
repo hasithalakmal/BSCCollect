@@ -21,7 +21,7 @@ public class DataBaseManagement {
     private Map prop;
     private Connection remotecon = null;
     private Connection localcon = null;
-
+    private String errorState="success";
     private static DataBaseManagement dbm = new DataBaseManagement();
 
     private DataBaseManagement() {
@@ -38,7 +38,9 @@ public class DataBaseManagement {
             remotecon = DriverManager.getConnection(url, username, password);
             // con = DriverManager.getConnection("jdbc:mysql://sql5.freesqldatabase.com:3306/sql590954?relaxAutoCommit=true&characterEncoding=utf-8&characterSetResults=utf-8", "sql590954", "cU6*nL4*");
         } catch (Exception e) {
+           // System.out.println("errr");
             System.out.println(e);
+            errorState = e.toString();
         }
 
         try {
@@ -54,7 +56,9 @@ public class DataBaseManagement {
             localcon = DriverManager.getConnection(url, username, password);
             // con = DriverManager.getConnection("jdbc:mysql://sql5.freesqldatabase.com:3306/sql590954?relaxAutoCommit=true&characterEncoding=utf-8&characterSetResults=utf-8", "sql590954", "cU6*nL4*");
         } catch (Exception e) {
+            //System.out.println("errr");
             System.out.println(e);
+            errorState = e.toString();
         }
 
     }
@@ -80,6 +84,8 @@ public class DataBaseManagement {
 
         } catch (Exception e) {
             System.out.println(e);
+            //System.out.println("errr");
+            errorState = e.toString();
         }
         return result;
     }
@@ -88,4 +94,9 @@ public class DataBaseManagement {
         return dbname;
     }
 
+    public String getErrorState() {
+        return errorState;
+    }
+
+    
 }
