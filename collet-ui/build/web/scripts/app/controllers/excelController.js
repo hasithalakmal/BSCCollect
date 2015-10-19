@@ -16,15 +16,15 @@
                 $scope.Selectedkpi = [];
                 $scope.upload = true;
                 $scope.success = true;
-                $scope.loginf = true;
+                $scope.loginf= true;
                 $scope.errorCount = 0;
-                $scope.errorMessag = true;
-
-
+                $scope.errorMessag  = true;
+              
+                
                 $scope.newstatus = [];
+                
 
-
-                $scope.uploadtrue = function () {
+                $scope.uploadtrue = function () { 
                     $location.path('/upload');
                 };
                 $scope.fileChanged = function (files) {
@@ -80,7 +80,7 @@
                         });
                         console.log($scope.KPIData);
                         $scope.v += 150;
-
+                        
                         //  $scope.isProcessing = false;
                         // console.log($scope.KPIData.length);
                         if ($scope.KPIData.length > 0) {
@@ -156,14 +156,16 @@
                     columnDefs: [
                         {field: 'metricName', width: '50%', displayName: 'Metric Name', enableCellEdit: true, cellTemplate: '<div ng-class="{red: row.entity.reason === \'Metric is not defined. Pleace check the new excel template\' || row.entity.reason === \'User is not defined. Pleace log in as collect user\' }"><div class="ngCellText" >{{row.getProperty(col.field)}}</div></div>'},
                         {field: 'date', width: '10%', displayName: 'Date'},
-                        {field: 'value', width: '10%', displayName: 'Value', enableCellEdit: true, cellTemplate: '<div ng-class="{yellow: row.entity.reason === \'value is too low - data is updated\' || row.entity.reason === \'value is too High - data is updated\' ||  row.entity.reason === \'value is too low - data is inserted\' || row.entity.reason === \'value is too High - data is updated\'}"><div class="ngCellText" >{{row.getProperty(col.field)}}</div></div>'},
+                        {field: 'value', width: '10%', displayName: 'Value', enableCellEdit: true,cellTemplate: '<div ng-class="{yellow: row.entity.reason === \'value is too low - data is updated\' || row.entity.reason === \'value is too High - data is updated\' ||  row.entity.reason === \'value is too low - data is inserted\' || row.entity.reason === \'value is too High - data is updated\'}"><div class="ngCellText" >{{row.getProperty(col.field)}}</div></div>'},
                         {field: 'reason', displayName: 'Status', enableCellEdit: false
                         }],
+                    
+                    
                 };
 
                 function reset() {
                     $scope.isProcessing = false;
-                    $scope.loginf = true;
+                     $scope.loginf = true;
                 }
                 ;
 
@@ -206,13 +208,13 @@
                         var data = {
                             "kpiName": k.kpiName,
                             "metricName": k.metricName,
-                            "date": k.date,
+                            "date":  k.date,
                             "value": k.value
                         };
                         $scope.newstatus.push(data);
                         if (!$scope.$$phase)
-                            $scope.$apply();
-
+                                 $scope.$apply();
+                        
                     });
 
 
@@ -227,44 +229,42 @@
                         angular.forEach(s, function (d) {
                             $scope.status.push(d);
                             console.log(d);
-                            if ((d.reason === 'Metric is not defined. Pleace check the new excel template')
-                                    || (d.reason === 'User is not defined. Pleace log in as collect user')) {
+                            if ( (d.reason === 'Metric is not defined. Pleace check the new excel template')
+                                || (d.reason === 'User is not defined. Pleace log in as collect user')) {
                                 errorCount += 1;
                                 $scope.errors.push(d);
                                 if (!$scope.$$phase)
-                                    $scope.$apply();
+                                 $scope.$apply();
                                 console.log(d.reason);
                             }
 
                         });
-
+                        
                         if (errorCount > 0) {
                             $scope.showStatus = true;
                             $scope.success = true;
-
+                           
 
                         } else {
-                            alert("1");
-                            console.log('1111111111111111111111111');
                             kpiService.confromRemote();
                             $scope.showStatus = false;
                             $scope.loginf = true;
                             $scope.success = false;
                             $scope.status = [];
-
-
+                            
+                            
                         }
                         //    console.log($scope.status);
-
+                       
                         $scope.upload = false;
-
+                        
                         if (!$scope.$$phase)
                             $scope.$apply();
                     });
                     reset();
 
                 };
-
+                
                 $scope.updatereson = function () {
                     var d = $scope.errors;
                     $scope.newstatus = [];
@@ -272,13 +272,13 @@
                         var data = {
                             "kpiName": k.kpiName,
                             "metricName": k.metricName,
-                            "date": k.date,
+                            "date":  k.date,
                             "value": k.value
                         };
                         $scope.newstatus.push(data);
                         if (!$scope.$$phase)
-                            $scope.$apply();
-
+                                 $scope.$apply();
+                        
                     });
 
 
@@ -298,14 +298,14 @@
                                     || (d.reason === 'value is too low - data is inserted')
                                     || (d.reason === 'value is too High - data is updated')
                                     || (d.reason === 'value is too High - data is inserted')
-                                    || (d.reason === 'value is too High - same data value ignored')
-                                    || (d.reason === 'value is too low - same data value ignored')
+                                    || (d.reason ==='value is too High - same data value ignored')
+                                    ||(d.reason === 'value is too low - same data value ignored')
                                     || (d.reason === 'Metric is not defined. Pleace check the new excel template')
                                     || (d.reason === 'User is not defined. Pleace log in as collect user')) {
                                 errorCount += 1;
                                 $scope.errors.push(d);
                                 if (!$scope.$$phase)
-                                    $scope.$apply();
+                                 $scope.$apply();
                                 console.log(d.reason);
                             }
 
@@ -316,26 +316,24 @@
                             $scope.success = true;
 
                         } else {
-                             alert("2");
-                             console.log('22222222222222222222');
                             kpiService.confromRemote().then(function (data) {
-                                console.log(data);
-                            });
+                               console.log(data);
+                           });
                             $scope.showStatus = false;
                             $scope.loginf = true;
                             $scope.success = false;
                             $scope.status = [];
-
-
-
+                            
+                            
+                            
                         }
                         //    console.log($scope.status);
-
+                       
                         $scope.upload = false;
-
+                        
                         if (!$scope.$$phase)
                             $scope.$apply();
-                    }), function (data) {
+                    }),function(data){
                         $scope.errorMessag = false;
                     };
                     reset();
@@ -349,10 +347,10 @@
                     };
                     console.log(obj);
                     kpiService.confrom(angular.toJson(obj)).then(function (data) {
-
+                       
                         var s = data.response;
                         var errorCount = 0;
-                        $scope.status = [];
+                        $scope.status =[];
                         angular.forEach(s, function (d) {
                             $scope.status.push(d);
                             console.log(d);
@@ -370,21 +368,19 @@
 
                         });
                         if (errorCount > 0) {
-
+                            
                             $scope.showStatus = true;
                             $scope.success = true;
-
+                            
 
                         } else {
-                             alert("3");
-                             console.log('33333333333333333333333');
-                            kpiService.confromRemote().then(function (data) {
-                                console.log(data);
-                            });
+                           kpiService.confromRemote().then(function (data) {
+                               console.log(data);
+                           });
                             $scope.showStatus = false;
                             $scope.loginf = true;
                             $scope.success = false;
-
+                            
                         }
                         //    console.log($scope.status);
 
@@ -394,7 +390,7 @@
                         if (!$scope.$$phase)
                             $scope.$apply();
                         $scope.KPIData = [];
-                    }, function (data) {
+                    },function(data){
                         $scope.errorMessag = false;
                     });
                     reset();

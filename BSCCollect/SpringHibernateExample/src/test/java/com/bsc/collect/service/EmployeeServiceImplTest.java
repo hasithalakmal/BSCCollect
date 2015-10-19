@@ -1,6 +1,5 @@
 package com.bsc.collect.service;
 
-import com.bsc.collect.service.EmployeeServiceImpl;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Matchers.anyInt;
