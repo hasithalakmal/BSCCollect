@@ -16,16 +16,17 @@
                 $scope.Selectedkpi = [];
                 $scope.upload = true;
                 $scope.success = true;
-                $scope.loginf= true;
+                $scope.loginf = true;
                 $scope.errorCount = 0;
-                $scope.errorMessag  = true;
-              
-                
-                $scope.newstatus = [];
-                
+                $scope.errorMessag = true;
 
-                $scope.uploadtrue = function () { 
-                    $location.path('/upload');
+
+                $scope.newstatus = [];
+
+
+                $scope.uploadtrue = function () {
+                    //  $location.path('/upload');
+                    window.location.reload();
                 };
                 $scope.fileChanged = function (files) {
                     $scope.sheets = [];
@@ -80,7 +81,7 @@
                         });
                         console.log($scope.KPIData);
                         $scope.v += 150;
-                        
+
                         //  $scope.isProcessing = false;
                         // console.log($scope.KPIData.length);
                         if ($scope.KPIData.length > 0) {
@@ -91,81 +92,21 @@
 
                     });
                 };
-                /* $scope.statusdata =[{"kpiName":"Distribution_loss","metricName":"Total Energy Delivered to Colombo City Via GSS during the six months.",
-                 "date":"12/31/2014",
-                 "value":" 52.00 ",
-                 "comment":1
-                 },
-                 {"kpiName":"Distribution_loss",
-                 "metricName":"Total Energy Delivered to Colombo City Via GSS during the six months.",
-                 "date":"06/31/2015",
-                 "value":" 65.00 ",
-                 "comment":"Metric is not defined"
-                 },
-                 {"kpiName":"Distribution_loss",
-                 "metricName":"Total of the Boundary Meter Readings of Colombo City during the six months.",
-                 "date":"12/31/2014",
-                 "value":" 53.00 ",
-                 "comment":"data is updated"
-                 },
-                 {"kpiName":"Distribution_loss",
-                 "metricName":"Total of the Boundary Meter Readings of Colombo City during the six months.",
-                 "date":"06/31/2015",
-                 "value":" 69.00 ",
-                 "comment":"data is inserted"
-                 }
-                 ];
-                 $scope.updateJSONString = function () {
-                 $scope.KPIData = [];
-                 $scope.json_string = JSON.stringify($scope.sheets[$scope.selectedSheetName]);
-                 $scope.kpidata = $scope.sheets[$scope.selectedSheetName];
-                 var k = $scope.kpidata;
-                 var kpi = $scope.kpidata;
-                 angular.forEach(kpi, function (data) {
-                 var metric = data.MetricName;
-                 
-                 angular.forEach(data, function (d, k) {
-                 var Dvalue = k; //asing the date 
-                 var date = "";
-                 var Kvalue = d; //asing dd value
-                 if (Dvalue !== "MetricName") {
-                 date = Dvalue;
-                 }
-                 var kpiObject = {
-                 "kpiName": $scope.selectedSheetName,
-                 "metricName": metric,
-                 "date": date,
-                 "value": Kvalue
-                 };
-                 // check all cell values were define, 
-                 if ((kpiObject.date !== "") && (kpiObject.value !== "") && (typeof kpiObject.metricName === 'string')) {
-                 //$scope.KPIData.push(kpiObject);
-                 }
-                 });
-                 
-                 });
-                 console.log($scope.KPIData);
-                 
-                 };
-                 
-                 */
-                //data();
+
 
                 $scope.kpiStatus = {
                     data: 'errors',
                     columnDefs: [
                         {field: 'metricName', width: '50%', displayName: 'Metric Name', enableCellEdit: true, cellTemplate: '<div ng-class="{red: row.entity.reason === \'Metric is not defined. Pleace check the new excel template\' || row.entity.reason === \'User is not defined. Pleace log in as collect user\' }"><div class="ngCellText" >{{row.getProperty(col.field)}}</div></div>'},
                         {field: 'date', width: '10%', displayName: 'Date'},
-                        {field: 'value', width: '10%', displayName: 'Value', enableCellEdit: true,cellTemplate: '<div ng-class="{yellow: row.entity.reason === \'value is too low - data is updated\' || row.entity.reason === \'value is too High - data is updated\' ||  row.entity.reason === \'value is too low - data is inserted\' || row.entity.reason === \'value is too High - data is updated\'}"><div class="ngCellText" >{{row.getProperty(col.field)}}</div></div>'},
+                        {field: 'value', width: '10%', displayName: 'Value', enableCellEdit: true, cellTemplate: '<div ng-class="{yellow: row.entity.reason === \'value is too low - data is updated\' || row.entity.reason === \'value is too High - data is updated\' ||  row.entity.reason === \'value is too low - data is inserted\' || row.entity.reason === \'value is too High - data is updated\'}"><div class="ngCellText" >{{row.getProperty(col.field)}}</div></div>'},
                         {field: 'reason', displayName: 'Status', enableCellEdit: false
                         }],
-                    
-                    
                 };
 
                 function reset() {
                     $scope.isProcessing = false;
-                     $scope.loginf = true;
+                    $scope.loginf = true;
                 }
                 ;
 
@@ -208,13 +149,13 @@
                         var data = {
                             "kpiName": k.kpiName,
                             "metricName": k.metricName,
-                            "date":  k.date,
+                            "date": k.date,
                             "value": k.value
                         };
                         $scope.newstatus.push(data);
                         if (!$scope.$$phase)
-                                 $scope.$apply();
-                        
+                            $scope.$apply();
+
                     });
 
 
@@ -229,21 +170,21 @@
                         angular.forEach(s, function (d) {
                             $scope.status.push(d);
                             console.log(d);
-                            if ( (d.reason === 'Metric is not defined. Pleace check the new excel template')
-                                || (d.reason === 'User is not defined. Pleace log in as collect user')) {
+                            if ((d.reason === 'Metric is not defined. Pleace check the new excel template')
+                                    || (d.reason === 'User is not defined. Pleace log in as collect user')) {
                                 errorCount += 1;
                                 $scope.errors.push(d);
                                 if (!$scope.$$phase)
-                                 $scope.$apply();
+                                    $scope.$apply();
                                 console.log(d.reason);
                             }
 
                         });
-                        
+
                         if (errorCount > 0) {
                             $scope.showStatus = true;
                             $scope.success = true;
-                           
+
 
                         } else {
                             kpiService.confromRemote();
@@ -251,20 +192,20 @@
                             $scope.loginf = true;
                             $scope.success = false;
                             $scope.status = [];
-                            
-                            
+
+
                         }
                         //    console.log($scope.status);
-                       
+
                         $scope.upload = false;
-                        
+
                         if (!$scope.$$phase)
                             $scope.$apply();
                     });
                     reset();
 
                 };
-                
+
                 $scope.updatereson = function () {
                     var d = $scope.errors;
                     $scope.newstatus = [];
@@ -272,13 +213,13 @@
                         var data = {
                             "kpiName": k.kpiName,
                             "metricName": k.metricName,
-                            "date":  k.date,
+                            "date": k.date,
                             "value": k.value
                         };
                         $scope.newstatus.push(data);
                         if (!$scope.$$phase)
-                                 $scope.$apply();
-                        
+                            $scope.$apply();
+
                     });
 
 
@@ -298,14 +239,14 @@
                                     || (d.reason === 'value is too low - data is inserted')
                                     || (d.reason === 'value is too High - data is updated')
                                     || (d.reason === 'value is too High - data is inserted')
-                                    || (d.reason ==='value is too High - same data value ignored')
-                                    ||(d.reason === 'value is too low - same data value ignored')
+                                    || (d.reason === 'value is too High - same data value ignored')
+                                    || (d.reason === 'value is too low - same data value ignored')
                                     || (d.reason === 'Metric is not defined. Pleace check the new excel template')
                                     || (d.reason === 'User is not defined. Pleace log in as collect user')) {
                                 errorCount += 1;
                                 $scope.errors.push(d);
                                 if (!$scope.$$phase)
-                                 $scope.$apply();
+                                    $scope.$apply();
                                 console.log(d.reason);
                             }
 
@@ -317,23 +258,24 @@
 
                         } else {
                             kpiService.confromRemote().then(function (data) {
-                               console.log(data);
-                           });
+                                console.log(data);
+                            });
                             $scope.showStatus = false;
                             $scope.loginf = true;
                             $scope.success = false;
                             $scope.status = [];
-                            
-                            
-                            
+
+
+
                         }
                         //    console.log($scope.status);
-                       
+
                         $scope.upload = false;
-                        
+
                         if (!$scope.$$phase)
                             $scope.$apply();
-                    }),function(data){
+                    }), function (data) {
+                        console.log(data);
                         $scope.errorMessag = false;
                     };
                     reset();
@@ -347,10 +289,10 @@
                     };
                     console.log(obj);
                     kpiService.confrom(angular.toJson(obj)).then(function (data) {
-                       
+
                         var s = data.response;
                         var errorCount = 0;
-                        $scope.status =[];
+                        $scope.status = [];
                         angular.forEach(s, function (d) {
                             $scope.status.push(d);
                             console.log(d);
@@ -368,19 +310,36 @@
 
                         });
                         if (errorCount > 0) {
-                            
+
                             $scope.showStatus = true;
                             $scope.success = true;
-                            
+
 
                         } else {
-                           kpiService.confromRemote().then(function (data) {
-                               console.log(data);
-                           });
-                            $scope.showStatus = false;
-                            $scope.loginf = true;
-                            $scope.success = false;
-                            
+                            kpiService.confromRemote().then(function (data) {
+                                console.log(data.responseText);
+                               if (data.responseText == "success") {
+                                    $scope.showStatus = false;
+                                    $scope.loginf = true;
+                                    $scope.success = false;
+                                } else {
+                                    alert("error : " + data.responseText);
+                                    $scope.errorMessag = false;
+                                }
+                            }, function (data) {
+                                console.log("error : " + data.responseText);
+                                if (data.responseText == "success") {
+                                    $scope.showStatus = false;
+                                    $scope.loginf = true;
+                                    $scope.success = false;
+                                } else {
+                                    alert("error : " + data.responseText);
+                                    $scope.errorMessag = false;
+                                }
+
+                            });
+
+
                         }
                         //    console.log($scope.status);
 
@@ -390,7 +349,7 @@
                         if (!$scope.$$phase)
                             $scope.$apply();
                         $scope.KPIData = [];
-                    },function(data){
+                    }, function (data) {
                         $scope.errorMessag = false;
                     });
                     reset();

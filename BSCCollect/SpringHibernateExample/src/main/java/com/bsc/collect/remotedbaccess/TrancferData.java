@@ -38,7 +38,7 @@ public class TrancferData {
             transaction_state = pcr.callQuery("TRUNCATE latestdata;");
             System.out.println("Truncate>>>>>>>>>>" + transaction_state);
             if (transaction_state.equals("success")) {
-                ResultSet res = pcl.callProc("selectConnectData");
+                ResultSet res = pcl.callProc("select_bscconnect_latestData");
 
                 boolean flag = false;
                 while (res.next()) {

@@ -4,7 +4,7 @@
         
      self.confrom = function (data, callback) {
             return ajaxService.post({
-                url: 'http://localhost:8080/SpringHibernateExample/structure/',
+                url: 'http://localhost:8080/BSCCollect/structure/',
                 data:data,
                 dataType: 'json',
                 contentType:'application/json;'

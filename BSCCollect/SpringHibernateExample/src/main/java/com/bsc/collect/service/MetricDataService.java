@@ -2,7 +2,6 @@ package com.bsc.collect.service;
 
 import java.util.List;
 
-import com.bsc.collect.model.Employee;
 import com.bsc.collect.model.MetricData;
 
 public interface MetricDataService {
