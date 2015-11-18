@@ -29,20 +29,12 @@ public class StructureRestController {
     @Autowired
     StructureDataService structureDataService;  //Service which will do all data retrieval/manipulation work
 
-     //-------------------Retrieve All Provinces--------------------------------------------------------
-    @RequestMapping(value = "/structure/", method = RequestMethod.GET)
-    public ResponseEntity<List<StructureData>> listAllProvince() {
-
-        List<StructureData> metricData = structureDataService.findAllStructureData();
-
-        System.out.println("Hello massa..." + metricData);
-        return new ResponseEntity<List<StructureData>>(metricData, HttpStatus.OK);
-    }
+     
     
     @RequestMapping(value = "/structure/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     @ResponseBody
     public String createData(@RequestBody StructureDataWrapper structureDataWrapper) {
-
+        
         String x = "{\"response\" :[";
         for (StructureData structureData : structureDataWrapper.getStructureDatas()) {
             structureDataService.savestructureData(structureData);

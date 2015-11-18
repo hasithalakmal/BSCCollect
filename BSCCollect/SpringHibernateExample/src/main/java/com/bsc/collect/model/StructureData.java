@@ -16,12 +16,14 @@ import java.util.logging.Logger;
  */
 public class StructureData {
 
-    String kpiName, metricName, reson;
+    String kpiName, metricName, reson,timePeriod;
     float minVal, maxVal;
 
     public String getKpiName() {
         return kpiName;
     }
+
+    
 
     public void setKpiName(String kpiName) {
         this.kpiName = kpiName;
@@ -59,14 +61,23 @@ public class StructureData {
         this.maxVal = maxVal;
     }
 
+    public String getTimePeriod() {
+        return timePeriod;
+    }
+
+    public void setTimePeriod(String timePeriod) {
+        this.timePeriod = timePeriod;
+    }
+
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 23 * hash + (this.kpiName != null ? this.kpiName.hashCode() : 0);
-        hash = 23 * hash + (this.metricName != null ? this.metricName.hashCode() : 0);
-        hash = 23 * hash + (this.reson != null ? this.reson.hashCode() : 0);
-        hash = 23 * hash + Float.floatToIntBits(this.minVal);
-        hash = 23 * hash + Float.floatToIntBits(this.maxVal);
+        hash = 89 * hash + (this.kpiName != null ? this.kpiName.hashCode() : 0);
+        hash = 89 * hash + (this.metricName != null ? this.metricName.hashCode() : 0);
+        hash = 89 * hash + (this.reson != null ? this.reson.hashCode() : 0);
+        hash = 89 * hash + (this.timePeriod != null ? this.timePeriod.hashCode() : 0);
+        hash = 89 * hash + Float.floatToIntBits(this.minVal);
+        hash = 89 * hash + Float.floatToIntBits(this.maxVal);
         return hash;
     }
 
@@ -88,6 +99,9 @@ public class StructureData {
         if ((this.reson == null) ? (other.reson != null) : !this.reson.equals(other.reson)) {
             return false;
         }
+        if ((this.timePeriod == null) ? (other.timePeriod != null) : !this.timePeriod.equals(other.timePeriod)) {
+            return false;
+        }
         if (Float.floatToIntBits(this.minVal) != Float.floatToIntBits(other.minVal)) {
             return false;
         }
@@ -97,10 +111,7 @@ public class StructureData {
         return true;
     }
 
-    @Override
-    public String toString() {
-        return "StructureData{" + "kpiName=" + kpiName + ", metricName=" + metricName + ", reson=" + reson + ", minVal=" + minVal + ", maxVal=" + maxVal + '}';
-    }
+    
 
     public String toJason() {
         String j = "";
