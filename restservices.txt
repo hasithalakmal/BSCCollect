@@ -1,0 +1,14 @@
+http://localhost:8080/BSCCollect/userdata/
+
+get - get all user data
+
+post - insert user
+
+{"user_id":"anuradini","user_name":"hasitha","phone_number":"55555","email":"ghasithalakmal@gmail.com","designation":"Software engineer","user_type":"adm","province_id":1}
+
+put - update user
+
+same object
+
+delete - delete user
+same objcet
