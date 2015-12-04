@@ -14,4 +14,5 @@ import java.util.List;
  */
 public interface NotificationMsgService {
     List getMsg(NotificationMsg notificationMsg);
+    List getLateMsg(NotificationMsg notificationMsg);
 }

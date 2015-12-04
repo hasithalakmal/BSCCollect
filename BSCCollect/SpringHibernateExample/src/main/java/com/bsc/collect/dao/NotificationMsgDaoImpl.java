@@ -46,5 +46,31 @@ public class NotificationMsgDaoImpl extends AbstractDao<Integer, NotificationMsg
         return null;
         
     }
+    
+    public List getLateNotificationMsg(NotificationMsg notificationMsg) {
+        
+        Query query1 = getSession().createSQLQuery(
+                "CALL select_all_province(); ");
+        List result1 = query1.list();
+        System.out.println(result1);
+
+        for (int i = 0; i < result1.size(); i++) {
+            String para = "(" + notificationMsg.getMonthofnotidied() + ",'" + result1.get(i) + "');";
+
+            Query query = getSession().createSQLQuery(
+                    "CALL notifiedLateDataSet " + para);
+
+            List result = query.list();
+
+            System.out.println(result.toString());
+           
+            emailSendingService.SendMail("ghasithalakmal@gmail.com", "BSC Collect", "This is a Late reminder from BSC Collect. You didnt update these data."+result.toString());
+
+        }
+
+        //  notificationMsg.setKpi_name(result.get(2).toString());
+        return null;
+        
+    }
 
 }

@@ -5,14 +5,10 @@
  */
 package com.bsc.collect.controller;
 
-import com.bsc.collect.dao.ProvinceDao;
-import com.bsc.collect.dao.ProvinceDaoImpl;
 import com.bsc.collect.model.NotificationMsg;
-import com.bsc.collect.model.Province;
 import com.bsc.collect.service.NotificationMsgService;
 import com.bsc.collect.service.ProvinceService;
 import java.util.Calendar;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -28,7 +24,7 @@ public class NotificationMsgRestController {
     NotificationMsgService notificationMsgService;
     ProvinceService provinceService;
 
-    @RequestMapping(value = "/message/", method = RequestMethod.GET)
+    @RequestMapping(value = "/messageReminder/", method = RequestMethod.GET)
     public void getmessage() {
 
        // List<InsertedMetricData> metricData = insertedMetricDataService.findAllInsertedMetricData();
@@ -48,6 +44,31 @@ public class NotificationMsgRestController {
         notificationMsg.setPrivincename("NWP");
         notificationMsg.setMonthofnotidied(month);
         notificationMsgService.getMsg(notificationMsg);
+       // return new ResponseEntity<List<InsertedMetricData>>(metricData, HttpStatus.OK);
+        
+    }
+    
+    
+    @RequestMapping(value = "/messagelateNotification/", method = RequestMethod.GET)
+    public void getLateNotification() {
+
+       // List<InsertedMetricData> metricData = insertedMetricDataService.findAllInsertedMetricData();
+        NotificationMsg notificationMsg = new NotificationMsg();
+        
+        int month = Calendar.getInstance().get(Calendar.MONTH);
+        System.out.println("Month is = "+month);
+        
+     //   List<Province> province = provinceService.findAllProvince();
+      /*  for(int i=0;i<province.size();i++){
+            String proname = province.get(i).getProvince_name();
+            System.out.println("Province "+province);
+        }*/
+        
+      /*  ProvinceDao pd = new ProvinceDaoImpl();
+        List<Province> x = pd.findAllProvince();*/
+        notificationMsg.setPrivincename("NWP");
+        notificationMsg.setMonthofnotidied(month);
+        notificationMsgService.getLateMsg(notificationMsg);
        // return new ResponseEntity<List<InsertedMetricData>>(metricData, HttpStatus.OK);
         
     }

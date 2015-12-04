@@ -8,7 +8,6 @@ package com.bsc.collect.service;
 import com.bsc.collect.dao.NotificationMsgDao;
 import com.bsc.collect.dao.ProvinceDao;
 import com.bsc.collect.model.NotificationMsg;
-import com.bsc.collect.model.Province;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,6 +25,11 @@ public class NotificationMsgServiceImpl implements NotificationMsgService{
     private ProvinceDao dao2;
 
     public List getMsg(NotificationMsg notificationMsg) {
+       
+        return dao.getNotificationMsg(notificationMsg);
+    }
+    
+    public List getLateMsg(NotificationMsg notificationMsg) {
        
         return dao.getNotificationMsg(notificationMsg);
     }

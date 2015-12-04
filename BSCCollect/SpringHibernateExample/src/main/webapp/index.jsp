@@ -27,6 +27,10 @@ http://localhost:8080/BSCCollect/bscconnect/ ---Get
 
 http://localhost:8080/BSCCollect/sendemail/ ---Get
 
+http://localhost:8080/BSCCollect/messageReminder/ ---Get
+
+http://localhost:8080/BSCCollect/messagelateNotification/ ---Get
+
 http://localhost:8080/BSCCollect/login/   ----post
 {"username":"anuradini","password":"hff7it4s3f"}
 
