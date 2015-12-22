@@ -23,9 +23,9 @@ public class BSCConnectRestController {
         TrancferData td = new TrancferData();
         String transaction_state = td.transferdata();
         System.out.println(transaction_state);
+        String msg = "{\"state\":\"" + transaction_state + "\"}";
 
-        
-        return transaction_state;
+        return msg;
     }
 
 }

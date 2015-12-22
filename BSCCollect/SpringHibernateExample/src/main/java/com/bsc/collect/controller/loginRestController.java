@@ -45,13 +45,13 @@ public class loginRestController {
                     u.setPwcounter(u.getPwcounter() + 1);
                     userService.updateUser(u);
                     System.err.println(u.toString());
-                    String jason = "{'isvalid':'user is temperelly blocked'}";
+                    String jason = "{\"isvalid\":\"user is temperelly blocked\"}";
                     return jason;
                 } else {
                     u.setPwcounter((u.getPwcounter() + 1));
                     userService.updateUser(u);
                     System.err.println(u.toString());
-                    String jason = "{'isvalid':'password is not correct'}";
+                    String jason = "{\"isvalid\":\"upassword is not correct\"}";
                     return jason;
                 }
 
@@ -60,13 +60,13 @@ public class loginRestController {
                     u.setPwcounter(u.getPwcounter() + 1);
                     userService.updateUser(u);
                     System.err.println(u.toString());
-                    String jason = "{'isvalid':'user is temperelly blocked'}";
+                    String jason = "{\"isvalid\":\"user is temperelly blocked\"}";
                     return jason;
                 } else {
                     u.setPwcounter(0);
                     userService.updateUser(u);
                     System.err.println(u.toString());
-                    String jason = "{'isvalid':'valid login'}";
+                    String jason = "{\"isvalid\":\"valid login\",\"type\":\""+u.getUser_type()+"\"}";
                     return jason;
                 }
             }
@@ -79,7 +79,7 @@ public class loginRestController {
         User user = userService.findUserByuser_id(login.getUsername());
         // System.out.println("massaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         if (user == null) {
-            String jason = "{'isvalid':'user id not exsit'}";
+            String jason = "{\"isvalid\":\"user id not exsit\"}";
             return jason;
         } else {
 
@@ -92,7 +92,7 @@ public class loginRestController {
             EmailSendingService email = new EmailSendingServiceImpl();
             email.SendMail(user.getEmail(), "Your password is change by BSCCollect", "your new password is = " + password);
             userService.resetPassowrd(user);
-            String jason = "{'isvalid':'reset password'}";
+            String jason = "{\"isvalid\":\"reset password\"}";
             return jason;
             
         }

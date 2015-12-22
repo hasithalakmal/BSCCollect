@@ -35,7 +35,7 @@ public class UserServiceImpl implements UserService {
     public void updateUser(User user) {
         User entity = dao.findUserByuser_id(user.getUser_id());
         if (entity != null) {
-            
+            System.out.println("update start>>>>>>>>>>>>>>>>>>>>>>>>>>");
             entity.setDesignation(user.getDesignation());
             entity.setEmail(user.getEmail());
             entity.setPhone_number(user.getPhone_number());
@@ -44,6 +44,7 @@ public class UserServiceImpl implements UserService {
             entity.setUser_type(user.getUser_type());
             entity.setPwcounter(user.getPwcounter());
            // entity.setPassword(entity.getPassword());
+            System.out.println("update start>>>>>>>>>>>>>>>>>>>>>>>>>>");
         }
     }
     

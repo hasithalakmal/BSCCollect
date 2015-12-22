@@ -32,7 +32,7 @@ public class InsertedMetricDataDaoImpl extends AbstractDao<Integer, InsertedMetr
         System.out.println("Its working baby.... - massa");
       //  String para = "('Total Energy Delivered to Colombo City Via GSS during the six months.','adm1','2015/04/23',520);";
 
-        String para = "('"+insertedMetricData.getMetricName()+"','"+"adm1"+"','"+insertedMetricData.getDate()+"',"+insertedMetricData.getValue()+");";
+        String para = "('"+insertedMetricData.getKpiName()+"','"+insertedMetricData.getMetricName()+"','"+insertedMetricData.getUserid()+"','"+insertedMetricData.getDate()+"',"+insertedMetricData.getValue()+");";
 
         Query query = getSession().createSQLQuery(
                 "CALL validate_data_insertion " + para);

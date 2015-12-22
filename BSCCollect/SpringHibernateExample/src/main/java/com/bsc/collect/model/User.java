@@ -41,7 +41,7 @@ public class User {
     @Column(name = "email", nullable = false)
     private String email;
 
-    @Size(min = 3, max = 50)
+    @Size(min = 0, max = 50)
     @Column(name = "designation", nullable = false)
     private String designation;
 

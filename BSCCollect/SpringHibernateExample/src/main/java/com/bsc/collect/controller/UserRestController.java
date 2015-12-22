@@ -44,7 +44,7 @@ public class UserRestController {
     }
     
     
-    @RequestMapping(value = "/userdata/{user_id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/userdataone/{user_id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> getuser(@PathVariable("user_id") String user_id) {
         System.out.println("Fetching User with id " + user_id);
         User user = userService.findUserByuser_id(user_id);
@@ -59,6 +59,7 @@ public class UserRestController {
     @RequestMapping(value = "/userdata/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     @ResponseBody
     public ResponseEntity<Void> createUser(@RequestBody User user) {
+        System.out.println(user.toString());
         System.out.println("ado massaaaa");
         System.out.println("Creating User " + user.getUser_id());
 

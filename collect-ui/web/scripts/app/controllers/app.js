@@ -1,11 +1,9 @@
 (function (angular) {
     var appRoot = angular.module('myApp', ['bcsCollectControllers', 'ngGrid', 'ui.autocomplete', 'ngRoute', 'ui.router',
-        'ui.bootstrap.datetimepicker', 'ui.bootstrap', 'ngAnimate','angularjs-dropdown-multiselect','ngFileUpload']);
+        'ui.bootstrap.datetimepicker', 'ui.bootstrap', 'ngAnimate','angularjs-dropdown-multiselect','ngFileUpload','remoteValidation']);
     appRoot.config(['$stateProvider',
         function ($stateProvider) {
-
             var  
-            
             dataList = {
                 name: "dataList",
                 url: '/dataList',
@@ -31,26 +29,26 @@
                 url: '/admin',
                 templateUrl: './views/admin/admin.html',
                 controller: 'AdminController'
+            },userReg = {
+                name: "newUser",
+                parent:"admin",
+                url: '/newUser',
+                templateUrl: './views/admin/userReg.html',
+                controller: 'AdminController'
+            },users = {
+                name: "users",
+                parent:"admin",
+                url: '/users',
+                templateUrl: './views/admin/users.html',
+                controller: 'AdminController'
+                
             },stucUpld = {
                 name: "stucUpld",
                 parent:"admin",
                 url: '/stucUpld',
                 templateUrl: './views/admin/stucUpld.html',
                 controller: 'AdminController'
-            },userReg = {
-                name: "newUser",
-                parent:"admin",
-                url: '/newUser',
-                templateUrl: './views/admin/userReg.html',
-                controller: 'userController'
-            },users = {
-                name: "users",
-                parent:"admin",
-                url: '/users',
-                templateUrl: './views/admin/users.html',
-                controller: 'userController'
-            }
-                    ;
+            };
             
 
             

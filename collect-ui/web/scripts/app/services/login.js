@@ -4,10 +4,12 @@
 
 
         self.login = function (data, callback) {
-            return ajaxService.get({
-                url: '',
+            console.log(data);
+            return ajaxService.post({
+                url: 'login/',
                 data: data,
-                dataType: 'text'
+                dataType: 'text',
+                contentType:'application/json;'
             }).done(function (result) {
                 if (typeof callback === "function")
                     callback(result);

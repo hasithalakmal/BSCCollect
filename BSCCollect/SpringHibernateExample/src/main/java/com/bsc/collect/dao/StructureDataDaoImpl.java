@@ -32,7 +32,7 @@ public class StructureDataDaoImpl extends AbstractDao<Integer, StructureData> im
         System.out.println("Its working baby.... - massa");
         //  String para = "('Total Energy Delivered to Colombo City Via GSS during the six months.','adm1','2015/04/23',520);";
 
-        String para = "('" + structureData.getKpiName() + "','" + structureData.getMetricName() + "'," + structureData.getMinVal() + "," + structureData.getMaxVal()+",'" + structureData.getTimePeriod()+"');";
+        String para = "('" + structureData.getKpiName() + "','" + structureData.getMetricName() + "'," + structureData.getMinVal() + "," + structureData.getMaxVal()+",'" + structureData.getTimePeriod()+"','"+structureData.getProvincename()+ "','" + structureData.getKpiunit()+"','" + structureData.getMetricunit()+"',"+structureData.getMetricduedate()+");";
 
         Query query = getSession().createSQLQuery(
                 "CALL validate_template_insertion " + para);

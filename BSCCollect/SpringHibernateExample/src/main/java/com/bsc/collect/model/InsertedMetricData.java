@@ -16,7 +16,7 @@ import java.util.logging.Logger;
  */
 public class InsertedMetricData {
 
-    String kpiName, metricName, date, value, reason;
+    String kpiName, metricName, date, value, reason, userid;
 
     public String getKpiName() {
         return kpiName;
@@ -58,14 +58,23 @@ public class InsertedMetricData {
         this.reason = reason;
     }
 
+    public String getUserid() {
+        return userid;
+    }
+
+    public void setUserid(String userid) {
+        this.userid = userid;
+    }
+
     @Override
     public int hashCode() {
-        int hash = 5;
-        hash = 79 * hash + (this.kpiName != null ? this.kpiName.hashCode() : 0);
-        hash = 79 * hash + (this.metricName != null ? this.metricName.hashCode() : 0);
-        hash = 79 * hash + (this.date != null ? this.date.hashCode() : 0);
-        hash = 79 * hash + (this.value != null ? this.value.hashCode() : 0);
-        hash = 79 * hash + (this.reason != null ? this.reason.hashCode() : 0);
+        int hash = 7;
+        hash = 41 * hash + (this.kpiName != null ? this.kpiName.hashCode() : 0);
+        hash = 41 * hash + (this.metricName != null ? this.metricName.hashCode() : 0);
+        hash = 41 * hash + (this.date != null ? this.date.hashCode() : 0);
+        hash = 41 * hash + (this.value != null ? this.value.hashCode() : 0);
+        hash = 41 * hash + (this.reason != null ? this.reason.hashCode() : 0);
+        hash = 41 * hash + (this.userid != null ? this.userid.hashCode() : 0);
         return hash;
     }
 
@@ -93,12 +102,17 @@ public class InsertedMetricData {
         if ((this.reason == null) ? (other.reason != null) : !this.reason.equals(other.reason)) {
             return false;
         }
+        if ((this.userid == null) ? (other.userid != null) : !this.userid.equals(other.userid)) {
+            return false;
+        }
         return true;
     }
 
+    
+
     @Override
     public String toString() {
-        return "{" + "kpiName : " + kpiName + ", metricName :" + metricName + ", date : " + date + ", value : " + value + ", reason : " + reason + '}';
+        return "{" + "kpiName : " + kpiName + ", metricName :" + metricName + ", userid :" + userid + ", date : " + date + ", value : " + value + ", reason : " + reason + '}';
     }
 
     public String toJason() {

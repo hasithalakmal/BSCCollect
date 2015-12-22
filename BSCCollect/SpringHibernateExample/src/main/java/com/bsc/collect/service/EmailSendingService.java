@@ -11,4 +11,5 @@ package com.bsc.collect.service;
  */
 public interface EmailSendingService {
     String SendMail(String to, String subject, String massage);
+    String SendMail(String to, String subject, String massage,String content);
 }
