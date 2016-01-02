@@ -17,28 +17,32 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "kpi_metric")
 public class NotificationContent {
+
     @Id
-            
+
     @Column(name = "kpi_name")
     String kpi_name;
-    
+
     @Column(name = "Period")
     String Period;
-    
+
     @Column(name = "kpiunit")
     String kpiunit;
-            
+
     @Column(name = "metric_name")
     String metric_name;
-    
+
     @Column(name = "metricunit")
     String metricunit;
-    
+
     @Column(name = "province_name")
-     String province_name;
+    String province_name;
     
+    @Column(name = "province_id")
+    int province_id;
+
     @Column(name = "duedate")
-     int duedate;
+    int duedate;
 
     public String getKpi_name() {
         return kpi_name;
@@ -88,6 +92,14 @@ public class NotificationContent {
         this.province_name = province_name;
     }
 
+    public int getProvince_id() {
+        return province_id;
+    }
+
+    public void setProvince_id(int province_id) {
+        this.province_id = province_id;
+    }
+
     public int getDuedate() {
         return duedate;
     }
@@ -98,14 +110,15 @@ public class NotificationContent {
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 73 * hash + (this.kpi_name != null ? this.kpi_name.hashCode() : 0);
-        hash = 73 * hash + (this.Period != null ? this.Period.hashCode() : 0);
-        hash = 73 * hash + (this.kpiunit != null ? this.kpiunit.hashCode() : 0);
-        hash = 73 * hash + (this.metric_name != null ? this.metric_name.hashCode() : 0);
-        hash = 73 * hash + (this.metricunit != null ? this.metricunit.hashCode() : 0);
-        hash = 73 * hash + (this.province_name != null ? this.province_name.hashCode() : 0);
-        hash = 73 * hash + this.duedate;
+        int hash = 3;
+        hash = 79 * hash + (this.kpi_name != null ? this.kpi_name.hashCode() : 0);
+        hash = 79 * hash + (this.Period != null ? this.Period.hashCode() : 0);
+        hash = 79 * hash + (this.kpiunit != null ? this.kpiunit.hashCode() : 0);
+        hash = 79 * hash + (this.metric_name != null ? this.metric_name.hashCode() : 0);
+        hash = 79 * hash + (this.metricunit != null ? this.metricunit.hashCode() : 0);
+        hash = 79 * hash + (this.province_name != null ? this.province_name.hashCode() : 0);
+        hash = 79 * hash + this.province_id;
+        hash = 79 * hash + this.duedate;
         return hash;
     }
 
@@ -136,6 +149,9 @@ public class NotificationContent {
         if ((this.province_name == null) ? (other.province_name != null) : !this.province_name.equals(other.province_name)) {
             return false;
         }
+        if (this.province_id != other.province_id) {
+            return false;
+        }
         if (this.duedate != other.duedate) {
             return false;
         }
@@ -144,10 +160,8 @@ public class NotificationContent {
 
     @Override
     public String toString() {
-        return "NotificationContent{" + "kpi_name=" + kpi_name + ", Period=" + Period + ", kpiunit=" + kpiunit + ", metric_name=" + metric_name + ", metricunit=" + metricunit + ", province_name=" + province_name + ", duedate=" + duedate + '}';
+        return "NotificationContent{" + "kpi_name=" + kpi_name + ", Period=" + Period + ", kpiunit=" + kpiunit + ", metric_name=" + metric_name + ", metricunit=" + metricunit + ", province_name=" + province_name + ", province_id=" + province_id + ", duedate=" + duedate + '}';
     }
 
-    
-    
     
 }

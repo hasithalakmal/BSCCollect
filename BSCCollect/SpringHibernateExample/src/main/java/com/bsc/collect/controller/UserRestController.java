@@ -34,7 +34,7 @@ public class UserRestController {
     @Autowired
     UserService userService;
 
-    @RequestMapping(value = "/userdata/", method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/userdata/", method = RequestMethod.GET)
     public ResponseEntity<List<User>> listAllUser() {
 
         List<User> user = userService.findAllUser();
@@ -76,7 +76,7 @@ public class UserRestController {
         String encodedpw = pe.Encode(password);
         user.setPassword(encodedpw);
         EmailSendingService email = new EmailSendingServiceImpl();
-        email.SendMail(user.getEmail(), "You are registerd to BSCCollect", "your new password is = "+password);
+        email.SendMail(user.getEmail(), "You are registerd to BSCCollect", "your new user ID is ="+user.getUser_id() +" password is = "+password);
         userService.saveUser(user);
         System.out.println("massoooo");
         HttpHeaders headers = new HttpHeaders();

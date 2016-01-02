@@ -22,15 +22,10 @@ import org.springframework.stereotype.Repository;
 public class NotificationMsgDaoImpl extends AbstractDao<Integer, NotificationMsgDao> implements NotificationMsgDao {
 
     EmailSendingService emailSendingService = new EmailSendingServiceImpl();
+    int proid = 0;
+    String proname = "";
 
     public List getNotificationMsg(NotificationMsg notificationMsg) {
-        System.out.println("massa");
-       /* UserDao ud = new UserDaoImpl();
-        List<User> users = ud.findAllUsers();*/
-        System.out.println("massaaaaaa");
-        
-       /* ProvinceService ps = new ProvinceServiceImpl();
-        List<Province> province = ps.findAllProvince();*/
 
         Query query1 = getSession().createSQLQuery(
                 "CALL select_all_province(); ");
@@ -38,25 +33,7 @@ public class NotificationMsgDaoImpl extends AbstractDao<Integer, NotificationMsg
         System.out.println(result1);
 
         for (int i = 0; i < result1.size(); i++) {
-            String email = "<!DOCTYPE html>\n"
-                    + "<html>\n"
-                    + "    <head>\n"
-                    + "        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n"
-                    + "        <title>JSP Page</title>\n"
-                    + "    </head>\n"
-                    + "    <body>\n"
-                    + "        <div>\n"
-                    + "        <h1>Accountant</h1>\n"
-                    + "        <p>This is a serve you as a helpful reminder that the following data to compute the respective KPI is due/overdue on the date indicated bellow. </p>\n"
-                    + "        <table  border=\"1\" style=\"width:80%;border-color: blue;border-style: solid;\">\n"
-                    + "            \n"
-                    + "            <tr style=\"background-color: yellow\">\n"
-                    + "                <td>KPI</td>\n"
-                    + "                <td>Data Required</td>\n"
-                    + "                <td>Update Frequency</td>\n"
-                    + "                <td>Unit</td>\n"
-                    + "                <td>Due Date</td>\n"
-                    + "            </tr>";
+            String email = "";
 
             String para = "(" + notificationMsg.getMonthofnotidied() + ",'" + result1.get(i) + "');";
 
@@ -67,12 +44,14 @@ public class NotificationMsgDaoImpl extends AbstractDao<Integer, NotificationMsg
             List result = query.list();
             for (int j = 0; j < result.size(); j++) {
                 NotificationContent noti = (NotificationContent) result.get(j);
+                proid = noti.getProvince_id();
+                proname = noti.getProvince_name();
                 String row = "<tr>\n"
                         + "                <td>" + noti.getKpi_name() + "</td>\n"
                         + "                <td>" + noti.getMetric_name() + "</td>\n"
                         + "                <td>" + noti.getPeriod() + "</td>\n"
                         + "                <td>" + noti.getMetricunit() + "</td>\n"
-                        + "                <td>" +noti.getDuedate() + "</td>\n"
+                        + "                <td>" + (notificationMsg.getMonthofnotidied() + 1) + "/" + noti.getDuedate() + "</td>\n"
                         + "            </tr>";
 
                 email = email + row;
@@ -85,16 +64,52 @@ public class NotificationMsgDaoImpl extends AbstractDao<Integer, NotificationMsg
                     + "        </div>\n"
                     + "    </body>\n"
                     + "</html>\n";
-            
-            
-            
-          /*  for (User user : users) {
-                if(pid==user.getProvince_id()){*/
-                    emailSendingService.SendMail("ghasithalakmal@gmail.com", "BSC Collect", "This is a reminder from BSC Collect. You Should update these data within two weeks." + result.toString(), email);
-         /*       }
-            }*/
 
-            
+            String para2 = "('" + result1.get(i) + "');";
+
+            Query query2 = getSession().createSQLQuery(
+                    "CALL getuserByProvince " + para2)
+                    .addEntity(User.class);
+
+            List result2 = query2.list();
+            for (int j = 0; j < result2.size(); j++) {
+                User user = (User) result2.get(j);
+
+                String heder = "<!DOCTYPE html>\n"
+                        + "<html>\n"
+                        + "    <head>\n"
+                        + "        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n"
+                        + "        <title>JSP Page</title>\n"
+                        + "    </head>\n"
+                        + "    <body>\n"
+                        + "        <div>\n"
+                        + "        <h2>" + user.getUser_id()+ " (" + user.getDesignation() + ") " + result1.get(i) + "</h2>\n"
+                        + "        <p>This is a serve you as a helpful reminder that the following data to compute the respective KPI is due/overdue on the date indicated bellow. </p>\n"
+                        + "        <table  border=\"1\" style=\"width:80%;border-color: blue;border-style: solid;\">\n"
+                        + "            \n"
+                        + "            <tr style=\"background-color: yellow\">\n"
+                        + "                <td>KPI</td>\n"
+                        + "                <td>Data Required</td>\n"
+                        + "                <td>Update Frequency</td>\n"
+                        + "                <td>Unit</td>\n"
+                        + "                <td>Due Date</td>\n"
+                        + "            </tr>";
+
+                String email2 = heder + email;
+
+                if (user.getEmail() != null) {
+                    emailSendingService.SendMail(user.getEmail(), "BSC Collect", "This is a reminder from BSC Collect.", email2);
+                }
+                heder="";
+                email2 ="";
+            }
+
+            System.out.println("xxxxxxxxxxxxxxxxxxxx");
+            /*  for (User user : users) {
+             if(pid==user.getProvince_id()){*/
+
+            /*       }
+             }*/
         }
 
         //  notificationMsg.setKpi_name(result.get(2).toString());

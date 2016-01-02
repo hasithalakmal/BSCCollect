@@ -5,6 +5,7 @@
  */
 package com.bsc.collect.model;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,9 +18,9 @@ import javax.validation.constraints.Size;
  *
  * @author Hasitha
  */
-@Entity
+@Entity(name = "ForeignKeyAssoEntitya")
 @Table(name = "USER")
-public class User {
+public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
