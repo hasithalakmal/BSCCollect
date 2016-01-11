@@ -26,6 +26,7 @@ public class NotificationMsgDaoImpl extends AbstractDao<Integer, NotificationMsg
     String proname = "";
 
     public List getNotificationMsg(NotificationMsg notificationMsg) {
+        System.out.println("massooooooooooooo : "+notificationMsg.getMonthofnotidied());
 
         Query query1 = getSession().createSQLQuery(
                 "CALL select_all_province(); ");
@@ -36,6 +37,7 @@ public class NotificationMsgDaoImpl extends AbstractDao<Integer, NotificationMsg
             String email = "";
 
             String para = "(" + notificationMsg.getMonthofnotidied() + ",'" + result1.get(i) + "');";
+            System.out.println("SQL : "+para);
 
             Query query = getSession().createSQLQuery(
                     "CALL notifiedKPI_MetricList_New " + para)
@@ -43,7 +45,11 @@ public class NotificationMsgDaoImpl extends AbstractDao<Integer, NotificationMsg
 
             List result = query.list();
             for (int j = 0; j < result.size(); j++) {
-                NotificationContent noti = (NotificationContent) result.get(j);
+                NotificationContent noti = null;
+                noti = (NotificationContent) result.get(j);
+                System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+                System.out.println(noti.toString());
+                System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
                 proid = noti.getProvince_id();
                 proname = noti.getProvince_name();
                 String row = "<tr>\n"
@@ -51,7 +57,7 @@ public class NotificationMsgDaoImpl extends AbstractDao<Integer, NotificationMsg
                         + "                <td>" + noti.getMetric_name() + "</td>\n"
                         + "                <td>" + noti.getPeriod() + "</td>\n"
                         + "                <td>" + noti.getMetricunit() + "</td>\n"
-                        + "                <td>" + (notificationMsg.getMonthofnotidied() + 1) + "/" + noti.getDuedate() + "</td>\n"
+                        + "                <td>" + (notificationMsg.getMonthofnotidied()) + "/" + noti.getDuedate() + "</td>\n"
                         + "            </tr>";
 
                 email = email + row;

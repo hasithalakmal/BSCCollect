@@ -26,25 +26,22 @@ public class NotificationMsgRestController {
 
     @RequestMapping(value = "/messageReminder/", method = RequestMethod.GET)
     public void getmessage() {
+        
+        for(int i=1;i<13;i++){
 
        // List<InsertedMetricData> metricData = insertedMetricDataService.findAllInsertedMetricData();
         NotificationMsg notificationMsg = new NotificationMsg();
         
-        int month = Calendar.getInstance().get(Calendar.MONTH);
+        int month = Calendar.getInstance().get(Calendar.MONTH)+1;
+        month = i;
         System.out.println("Month is = "+month);
         
-     //   List<Province> province = provinceService.findAllProvince();
-      /*  for(int i=0;i<province.size();i++){
-            String proname = province.get(i).getProvince_name();
-            System.out.println("Province "+province);
-        }*/
-        
-      /*  ProvinceDao pd = new ProvinceDaoImpl();
-        List<Province> x = pd.findAllProvince();*/
-        notificationMsg.setPrivincename("NWP");
+     
+       // notificationMsg.setPrivincename("NWP");
         notificationMsg.setMonthofnotidied(month);
         notificationMsgService.getMsg(notificationMsg);
        // return new ResponseEntity<List<InsertedMetricData>>(metricData, HttpStatus.OK);
+        }
         
     }
     
@@ -55,7 +52,8 @@ public class NotificationMsgRestController {
        // List<InsertedMetricData> metricData = insertedMetricDataService.findAllInsertedMetricData();
         NotificationMsg notificationMsg = new NotificationMsg();
         
-        int month = Calendar.getInstance().get(Calendar.MONTH);
+        int month = Calendar.getInstance().get(Calendar.MONTH)+1;
+       
         System.out.println("Month is = "+month);
         
      //   List<Province> province = provinceService.findAllProvince();
@@ -68,6 +66,7 @@ public class NotificationMsgRestController {
         List<Province> x = pd.findAllProvince();*/
         notificationMsg.setPrivincename("NWP");
         notificationMsg.setMonthofnotidied(month);
+        System.out.println("adooooooo :"+notificationMsg.getMonthofnotidied());
         notificationMsgService.getLateMsg(notificationMsg);
        // return new ResponseEntity<List<InsertedMetricData>>(metricData, HttpStatus.OK);
         

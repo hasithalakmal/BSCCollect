@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -27,13 +28,14 @@ public class loginRestController {
     @Autowired
     UserService userService;
 
-    @RequestMapping(value = "/login/", method = RequestMethod.POST, consumes = "application/json")
+    @RequestMapping(value = "/login/", method = RequestMethod.POST, consumes = "application/json",  produces = "application/json")
+    @ResponseBody
     public String isValidUser(@RequestBody Login login) {
         //System.out.println(">>>>>>>>>>>>>>>>>>>>>" + login.toString());
         User u = userService.findUserByuser_id(login.getUsername());
         // System.out.println("massaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         if (u == null) {
-            String jason = "{'isvalid':'user id not exsit'}";
+            String jason = "{\"isvalid\":\"user id not exsit\"}";
             return jason;
         } else {
             System.out.println("x = " + u.toString());
@@ -51,7 +53,7 @@ public class loginRestController {
                     u.setPwcounter((u.getPwcounter() + 1));
                     userService.updateUser(u);
                     System.err.println(u.toString());
-                    String jason = "{\"isvalid\":\"upassword is not correct\"}";
+                    String jason = "{\"isvalid\":\"password is not correct\"}";
                     return jason;
                 }
 

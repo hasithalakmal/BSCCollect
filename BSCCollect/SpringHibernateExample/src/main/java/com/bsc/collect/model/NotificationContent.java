@@ -18,7 +18,7 @@ import javax.persistence.Table;
 @Table(name = "kpi_metric")
 public class NotificationContent {
 
-    @Id
+    
 
     @Column(name = "kpi_name")
     String kpi_name;
@@ -30,6 +30,7 @@ public class NotificationContent {
     String kpiunit;
 
     @Column(name = "metric_name")
+    @Id
     String metric_name;
 
     @Column(name = "metricunit")
